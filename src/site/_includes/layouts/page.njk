@@ -1,0 +1,16 @@
+---
+layout: layouts/default.njk
+templateClass: tmpl-page
+---
+
+<div class="entry">
+    <div class="entry__header">
+        <h1 class="entry__heading">{{ title }}</h1>
+        <span class="entry__subheading">{{ subheading }}</span>
+    </div>
+    <div class="entry__inner">
+        <div class="entry__content">
+            {{ content | safe }}
+        </div>
+    </div>
+</div>

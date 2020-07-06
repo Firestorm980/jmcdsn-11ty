@@ -1,0 +1,19 @@
+{
+    "networks": [
+        {
+            "slug": "linkedin",
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/jon-christensen-2768381a/"
+        },
+        {
+            "slug": "github",
+            "name": "Github",
+            "url": "https://github.com/Firestorm980/"
+        },
+        {
+            "slug": "twitter",
+            "name": "Twitter",
+            "url": "https://twitter.com/jonmchristensen"
+        }
+    ]
+}

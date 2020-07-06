@@ -1,0 +1,14 @@
+<div class="social">
+    <ul class="list list--inline">
+        {% for network in social.networks %}
+            <li class="list-item">
+                <a href="{{ network.url }}">
+                    <span class="screen-reader-text">{{ network.name }}</span>
+                    <svg class="icon">
+                        <use xlink:href="#icon-{{ network.slug }}"></use>
+                    </svg>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -1,17 +1,27 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicons/manifest.json">
+    <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#f39c12">
+    <meta name="theme-color" content="#f39c12">
+
     <link rel="stylesheet" href="{% webpackAsset 'main.css' %}">
-    <title>{{ title }}</title>
+    {% include "seo.njk" %}
   </head>
-  <body>
-    <div class="container mt-8 mb-8">
-      <h1 class="text-5xl">Elevenpack</h1>
-    </div>
-    {{ content | safe }}
+  <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
+    {% include "components/svg.njk" %}
+    {% include "header.njk" %}
+    <main>
+      {{ content | safe }}
+    </main>
+    {% include "footer.njk" %}
     <script src="{% webpackAsset 'main.js' %}"></script>
   </body>
 </html>
