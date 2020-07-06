@@ -6,21 +6,29 @@ const manifest = JSON.parse(
   fs.readFileSync(manifestPath, { encoding: "utf8" })
 );
 
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginNavigation = require("@11ty/eleventy-navigation");
+
 module.exports = function(eleventyConfig) {
+
+  // Plugins
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(pluginNavigation);
+
+  // Filters
+  eleventyConfig.addFilter( 'dump', require('./src/_11ty/filters/dump' ) );
+  
+  // Shortcodes
+  eleventyConfig.addShortcode( 'copyrightDate', require( './src/_11ty/shortcodes/copyrightDate' ) );
+  eleventyConfig.addShortcode( 'dateFormat', require( './src/_11ty/shortcodes/dateFormat' ) );
+
   // Layout aliases make templates more portable.
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
-
-  // Adds a universal shortcode to return the URL to a webpack asset. In Nunjack templates:
-  // {% webpackAsset 'main.js' %} or {% webpackAsset 'main.css' %}
-  eleventyConfig.addShortcode("webpackAsset", function(name) {
-    if (!manifest[name]) {
-      throw new Error(`The asset ${name} does not exist in ${manifestPath}`);
-    }
-    return manifest[name];
-  });
+  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  eleventyConfig.addLayoutAlias("project", "layouts/project.njk");
 
   // Copy all images directly to dist.
-  eleventyConfig.addPassthroughCopy({ "src/img": "img" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/images": "assets/images" });
 
   // Copy external dependencies to dist.
   eleventyConfig.addPassthroughCopy({ "src/vendor": "vendor" });
@@ -28,9 +36,13 @@ module.exports = function(eleventyConfig) {
   // Reload the page every time the JS/CSS are changed.
   eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
 
-  // A debug utility.
-  eleventyConfig.addFilter("dump", obj => {
-    return util.inspect(obj);
+  // Adds a universal shortcode to return the URL to a webpack asset. In Nunjack templates:
+  // {% webpackAsset 'main.js' %} or {% webpackAsset 'main.css' %}
+  eleventyConfig.addShortcode("webpackAsset", function(name) {
+    if (!manifest[name]) {
+        throw new Error(`The asset ${name} does not exist in ${manifestPath}`);
+    }
+    return manifest[name];
   });
 
   return {
@@ -39,8 +51,6 @@ module.exports = function(eleventyConfig) {
       includes: "_includes", // relative to dir.input
       output: "dist",
     },
-    htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk",
     passthroughFileCopy: true,
   };
 };
