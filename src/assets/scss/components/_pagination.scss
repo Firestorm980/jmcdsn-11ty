@@ -1,0 +1,18 @@
+/* assets/scss/components/_pagination.scss */
+
+.pagination {
+	padding: 10vh 2em;
+	display: block;
+	width: 100%;
+
+	.page-numbers {
+		@extend .button;
+		@extend .button--primary;
+
+		&.current {
+			background-color: transparent;
+			color: $base-background;
+			background-position: right;
+		}
+	}
+}

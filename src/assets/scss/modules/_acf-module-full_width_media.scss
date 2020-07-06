@@ -1,0 +1,49 @@
+/* assets/scss/modules/_acf-module-full_width_media.scss */
+
+.section--acf-module-full-width-media {
+	.section__base {
+		padding: 10vh 10vw;
+	}
+	.section__base--hidden {
+		padding: 0;
+	}
+	.section__module {
+		position: relative;
+		width: 100%;
+	}
+
+	.media--image {
+		position: relative;
+		min-height: calc( 100vh - 3.125rem );
+		width: 100%;
+		display: block;
+
+		> img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+
+			@include object-fit( cover );
+		}
+	}	
+	.slick-dots {
+		width: 100%;
+	}
+	.slides {
+		.slide__figure {
+			flex-direction: column;
+			display: flex;
+			flex-direction: column;
+
+			> img {
+				width: 100%;
+				position: stat
+			}
+		}
+		.slide__figcaption {
+		}
+	}
+
+}

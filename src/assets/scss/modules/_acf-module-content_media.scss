@@ -1,0 +1,32 @@
+/* assets/scss/modules/_acf-module-content_media.scss */
+
+.section--acf-module-content-media {
+	display: flex;
+	flex-direction: column;
+
+	@include bp( lg ) {
+		flex-direction: row;
+	}
+
+	.section__base {
+		padding: 10vh 10vw;
+		width: 100%;
+
+		@include bp( lg ) {
+			width: 50%;
+		}
+	}
+	.section__base--hidden {
+		padding: 0;
+	}
+	.section__module {
+		width: 100%;
+
+		@include bp( lg ) {
+			width: 50%;
+		}
+	}
+	.slide__figcaption {
+		@include screen-reader-text();
+	}
+}

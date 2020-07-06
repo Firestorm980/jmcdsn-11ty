@@ -1,0 +1,58 @@
+/* assets/scss/layouts/_page.scss */
+
+.error404 {
+    .entry__inner {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 10vh 10vw;
+		justify-content: space-between;
+	}
+	.entry__header {
+		padding: 10vh 10vw;
+		min-height: 100vh;
+		display: flex;
+		background-color: darken( $base-background, 4% );
+		flex-direction: column;
+		justify-content: center;
+	}
+	.entry__heading {
+		margin-bottom: 0;
+    }
+	.entry__content {
+		max-width: 35em;
+	}
+	.wysiwyg {
+		max-width: 35em;
+	}
+}
+
+.search {
+    .search__header {
+        padding: 10vh 10vw;
+        min-height: 100vh;
+        display: flex;
+        background-color: darken( $base-background, 4% );
+        flex-direction: column;
+        justify-content: center;
+    }
+    .search__heading {
+        .subheading {
+            &:before {
+                content: '‘';
+            }
+            &:after {
+                content: '’';
+            }
+        }
+    }
+    .search__main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10vh 10vw;
+        justify-content: space-between;
+    }
+    .search__loop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

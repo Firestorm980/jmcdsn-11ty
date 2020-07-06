@@ -1,0 +1,46 @@
+/* assets/scss/components/_meta.scss */
+
+.metas {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin: -1rem;
+}
+
+.meta {
+	flex-grow: 1;
+	padding: 1rem;
+	width: 100%;
+
+	@include bp( md ) {
+		width: auto;
+	}
+}
+.meta__heading {
+	margin-bottom: 0.75rem;
+	padding-bottom: 0.5rem;
+	color: inherit;
+	font-size: $font-size-h5;
+	font-weight: $font-weight-xbold;
+	text-transform: uppercase;
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		height: 2px;
+		width: 100%;
+		background-image: linear-gradient( to right, $brand-primary, transparentize( $brand-primary, 1 ) );
+		position: absolute;
+		top: 100%;
+		left: 0;
+	}
+}
+.meta__list {
+	list-style: none;
+	padding-left: 0;
+	font-size: 0.875rem;
+	margin-bottom: 0;
+	color: darken( $font-body-color, 30% );
+	font-weight: $font-weight-normal;
+}

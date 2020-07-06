@@ -1,0 +1,121 @@
+/* assets/scss/components/_featured-project.scss */
+
+.featured-project {
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	width: 100%;
+}
+.featured-project__link {
+	position: absolute;	
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&:before {
+		display: none;
+	}
+
+	&:hover,
+	&:focus {
+		.featured-project__background {
+			opacity: 0.5;
+		}
+		.featured-project__image img {
+			transform: scale(1.1);
+		}
+		.featured-project__heading {
+			&:before {
+				background-color: lighten( $brand-primary, 6% );
+				transform: scaleX(1);
+				opacity: 1;
+			}
+		}
+		.featured-project__excerpt {
+			max-height: em(200);
+			opacity: 1;
+			visibility: visible;
+
+			transition-delay: $base-duration, $base-duration, 0s;
+		}
+		.button {
+	        background-color: transparent;
+	        color: $base-background;
+	        background-position: right;
+		}
+	}
+}
+.featured-project__image {
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 120%;
+		width: 120%;
+		transform: scale(1);
+
+		@include trans( transform );
+		@include object-fit( cover );
+	}
+}
+.featured-project__background {
+	background-color: darken( $base-background, 4% );
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.8;
+
+	@include trans( opacity );
+}
+.featured-project__content {
+	text-shadow: 0.125em 0.125em 0.125em transparentize( $base-background, 0.7 );
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	color: $font-body-color;
+	width: 100%;
+	padding: 10vh 10vw;
+	background-color: transparentize( darken( $base-background, 4% ), 0.2 );
+}
+.featured-project__heading {
+	@extend .heading--2;
+	
+	color: $font-heading-color;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 0.25em;
+
+	&:before {
+		content: '';
+		display: block;
+		height: 1px;
+		width: 100%;
+		bottom: 0;
+		position: absolute;
+		left: 0;
+		background-color: $color-white;
+		transform: scaleX(0);
+		opacity: 0;
+
+		@include trans( (background-color,opacity,transform) );
+	}
+}
+.featured-project__excerpt {
+	display: none;
+	max-width: 35em;
+
+	@include bp( md ) {
+		display: inherit;
+		opacity: 0;
+		visibility: hidden;
+		max-height: 0;
+
+		@include trans( (opacity, visibility, max-height) );
+	}
+}

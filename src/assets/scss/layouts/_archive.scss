@@ -1,0 +1,35 @@
+/* assets/scss/layouts/_archive.scss */
+
+.archive__main {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10vh 10vw;
+	justify-content: space-between;
+
+	.post-type-archive-project & {
+		padding: 0;
+	}
+}
+.archive__header {
+	padding: 10vh 10vw;
+	min-height: 100vh;
+	display: flex;
+	background-color: darken( $base-background, 4% );
+	flex-direction: column;
+	justify-content: center;
+
+	.wysiwyg {
+	    max-width: 35em;
+	}
+}
+.archive__loop {
+	display: flex;
+	flex-wrap: wrap;	
+	.category &,
+	.blog & {
+		margin: 0 -2em;
+	}
+	.post-type-archive-project & {
+		width: 100%;
+	}
+}

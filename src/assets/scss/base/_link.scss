@@ -1,0 +1,40 @@
+/* assets/scss/base/_link.scss */
+
+// Links
+a {
+	color: $brand-primary;
+	background-color: transparent;
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	font-weight: $font-weight-normal;
+
+	@include trans( (background-color,color) );
+
+	&:before {
+		content: '';
+		display: block;
+		height: 1px;
+		width: 100%;
+		bottom: 0;
+		position: absolute;
+		left: 0;
+		background-color: $color-white;
+		transform: scaleX(0);
+		opacity: 0;
+
+		@include trans( (background-color,opacity,transform) );
+	}
+
+	&:hover,
+	&:focus {
+		color: lighten( $brand-primary, 6% );
+		background-color: transparent;
+
+		&:before {
+			background-color: lighten( $brand-primary, 6% );
+			transform: scaleX(1);
+			opacity: 1;
+		}
+	}
+}

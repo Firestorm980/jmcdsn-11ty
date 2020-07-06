@@ -1,0 +1,117 @@
+/**
+ * Variables
+ */
+
+// Colors
+$color-white: #fff;
+$color-black: #000;
+
+$color-success: #2ecc71;
+$color-info:    #3498db;
+$color-warning: #f1c40f;
+$color-danger:  #f8354a;
+
+// Grays
+$gray-darkest:  lighten( $color-black, 10% );
+$gray-darker:   lighten( $color-black, 20% );
+$gray-dark:     lighten( $color-black, 40% );
+$gray:          lighten( $color-black, 60% );
+$gray-light:    lighten( $color-black, 80% );
+$gray-lighter:  lighten( $color-black, 90% );
+$gray-lightest: lighten( $color-black, 96% );
+
+// Brand
+$brand-primary:   #F39C12;
+$brand-secondary: #348BD4;
+$brand-tertiary:  #7f8c8d;
+
+
+// Social Networks
+$amazon:      #FF9900;
+$android:     #A4C639;
+$apple:       #B9BFC1;
+$blogger:     #F57D00;
+$codepen:     #231F20;
+$disqus:      #2E9FFF;
+$dropbox:     #2281CF;
+$evernote:    #6BB130;
+$facebook:    #3B5998;
+$flikr:       #0063DB;
+$github:      #4183C4;
+$google:      #245DC1;
+$googleplus:  #D14836;
+$gravatar:    #1E8CBE;
+$imdb:        #F3CE00;
+$instagram:   #3F729B;
+$jquery:      #0867AB;
+$lastfm:      #D51007;
+$linkedin:    #007FB1;
+$myspace:     #008DDE;
+$onedrive:    #094AB1;
+$picasa:      #4B5D5F;
+$pocket:      #EF4056;
+$pinterest:   #CB2027;
+$rss:         #FF8300;
+$skype:       #00AFF0;
+$soundcloud:  #FF6600;
+$spotify:     #80B719;
+$stumbleupon: #EB4924;
+$tumblr:      #2C4762;
+$twitch:      #6441A5;
+$twitter:     #00ACED;
+$vimeo:       #44BBFF;
+$vine:        #00A47A;
+$yahoo:       #731A8B;
+$yelp:        #C93C27;
+$youtube:     #CD332D;
+
+// Typography
+$font-body-color:        hsl( 0, 0, 80% );
+$font-heading-color:     hsl( 0, 0, 94% );
+
+// Typography
+$base-font-family-sans-serif: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$base-font-family-script:     cursive;
+$base-font-family-serif:      Georgia, "Times New Roman", Times, serif;
+$base-font-family-mono:       Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$font-weight-xlight:   200;
+$font-weight-light:    300;
+$font-weight-normal:   400;
+$font-weight-medium:   500;
+$font-weight-semibold: 600;
+$font-weight-bold:     700;
+$font-weight-xbold:    900;
+
+$base-ems:            16px;
+$base-font-size:      1.25rem;
+$base-line-height:    1.5;
+$base-text-align:     left;
+$base-font-family: 	  $base-font-family-sans-serif;
+$base-font-weight:    $font-weight-light;
+$base-font-style:     normal;
+$base-heading-family: $base-font-family-sans-serif;
+$base-background:     hsl(0, 0%, 9%);
+
+// Headings
+$font-size-h1: 5.063rem;
+$font-size-h2: 3.375rem;
+$font-size-h3: 2.25rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1rem;
+$font-size-h6: 0.667rem;
+$font-small:   $font-size-h6;
+
+// Transitions
+$base-duration: 300ms;
+$base-timing:   cubic-bezier(.40,.15,.60,.85);
+
+// Breakpoints
+$breakpoints: (
+	'xs': 30em, // 480
+	'sm': 40em, // 640
+	'md': 50em, // 800
+	'lg': 60em, // 960
+	'xl': 70em, // 1120
+	'xxl': 80em, // 1280
+);

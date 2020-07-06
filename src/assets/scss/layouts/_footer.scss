@@ -1,0 +1,42 @@
+/* assets/scss/layouts/_footer.scss */
+
+.site-footer {
+	padding: 0 10vw;
+	background-color: darken( $base-background, 4% );
+	color: $font-body-color;
+	position: relative;
+
+	.social {
+		padding: 1rem;
+
+		> ul {
+			margin: 0 -0.5rem;
+		}
+		li {
+			padding: 0 0.5rem;
+		}
+		a {
+			color: $color-white;
+
+			&:hover,
+			&:focus {
+				background-color: transparent;
+				color: $brand-primary;
+			}
+		}
+	}
+}
+.site-footer__wrap {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem;
+	justify-content: space-between;
+}
+.site-footer__copyright {
+	font-size: rem(14);
+	padding: 1rem;
+
+	> p {
+		margin: 0;
+	}
+}

@@ -1,0 +1,81 @@
+/* assets/scss/modules/_acf-module-responsive_devices.scss */
+
+.section--acf-module-responsive-devices {
+	background-color: $base-background;
+	.section__base {
+		padding: 10vh 10vw;
+	}
+	.section__base--hidden {
+		padding: 0;
+	}
+
+
+	.devices {
+		display: flex;
+		position: relative;
+		padding-bottom: 10vh;
+		width: 100%;
+		padding-left: 10vw;
+		padding-right: 10vw;
+		align-items: flex-end;
+	}
+	.device {
+		background-color: $base-background;
+		display: none;
+		position: relative;
+		border-radius: 1em;
+		margin: 0 auto;
+	}
+	.device__hardware {
+		display: block;
+		+ img {
+			position: absolute;
+			top: 0;
+			left: 0;			
+		}
+	}
+
+	.device--large {
+		
+		@include bp( md ) {
+			display: block;
+			width: 75%;
+		}
+		
+		img[class^="attachment"] {
+			width: 91.45%;
+			top: 5.325%;
+			left: 4.25%;
+		}
+	}
+	.device--medium {
+		display: block;
+		width: 75%;
+
+		@include bp( md ) {
+			width: 30%;
+			margin-left: -4em;
+		}
+
+		img[class^="attachment"] {
+			width: 86.275%;
+			top: 9.2%;
+			left: 6.9%;
+		}
+	}
+	.device--small {
+		display: block;
+		width: 25%;
+		margin-left: -1em;
+
+		@include bp( md ) {
+			width: 10%;
+		}
+
+		img[class^="attachment"] {
+			width: 83%;
+			top: 15%;
+			left: 9%;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+/* assets/scss/base/_table.scss */
+
+table {
+	border-collapse: collapse;
+}
+thead {
+
+}
+tbody {
+	tr:nth-child(even) {
+		background-color: $gray-lightest;
+	}
+}
+tfoot {
+	td {
+		border: none;
+		background-color: $gray-darker;
+		color: $color-white;
+		font-weight: $font-weight-bold;		
+		font-size: $font-small;
+	}
+}
+tr {
+
+}
+th {
+	background-color: $gray-darker;
+	color: $color-white;
+	font-weight: $font-weight-bold;
+	padding: 0.5rem;
+	text-align: left;
+	vertical-align: top;
+}
+td {
+	border: 1px solid $gray-lighter;
+	padding: 0.5rem;
+	text-align: left;
+	vertical-align: top;
+}

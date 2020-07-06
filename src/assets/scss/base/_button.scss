@@ -1,0 +1,171 @@
+/* assets/scss/base/_button.scss */
+
+.button {
+    appearence: none;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+
+    font-family: $base-font-family;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.8em 1.25em 0.7em;
+    letter-spacing: 0.05em;
+    font-size: 0.8rem;
+    text-shadow: none;
+
+    @include trans( (background-color, border-color, color) );
+
+    &:disabled,
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: $gray-lighter;
+        border-color: $gray-light;
+        color: $gray;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $gray-lighter;
+            border-color: $gray-light;
+            color: $gray;
+            box-shadow: none;
+        }
+    }
+}
+// Sizes
+.button--lg {
+    font-size: $font-size-h4;
+}
+.button--sm {
+    font-size: $font-size-h6;
+}
+// Styles
+.button--primary {
+    $color: $brand-primary;
+
+    border-radius: 0.25em;
+    border-color: $color;
+    background-color: transparent;
+    background-image: linear-gradient( to right, 
+        transparent 25%, 
+        transparentize( $color, 0.67 ) 25%, 
+        transparentize( $color, 0.67 ) 50%, 
+        transparentize( $color, 0.33 ) 50%, 
+        transparentize( $color, 0.33 ) 75%, 
+        $color 75% 
+    );
+    background-size: 400% 100%;
+    background-position: left;
+    box-shadow: 0 0.125em 0 transparentize( $color-black, 0.9 );
+
+    color: $color;
+
+    @include trans( (background-position, color) );
+
+    transition-duration: 0.5s;
+
+    &:hover,
+    &:focus {
+        border-color: $color;
+        border-width: 2px;
+        background-color: transparent;
+        color: $base-background;
+        background-position: right;
+    }
+}
+.button--secondary {
+    $color: $brand-secondary;
+
+    border-radius: 0.25em;
+    border-color: $color;
+    background-color: transparent;
+    background-image: linear-gradient( to right, 
+        transparent 25%, 
+        transparentize( $color, 0.67 ) 25%, 
+        transparentize( $color, 0.67 ) 50%, 
+        transparentize( $color, 0.33 ) 50%, 
+        transparentize( $color, 0.33 ) 75%, 
+        $color 75% 
+    );
+    background-size: 400% 100%;
+    background-position: left;
+    box-shadow: 0 0.125em 0 transparentize( $color-black, 0.9 );
+
+    color: $color;
+
+    @include trans( (background-position, color) );
+
+    transition-duration: 0.5s;
+
+    &:hover,
+    &:focus {
+        border-color: $color;
+        border-width: 2px;
+        background-color: transparent;
+        color: $base-background;
+        background-position: right;
+    }
+}
+
+.button--skip {
+    @extend .button--primary;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 1em;
+    transform: translateY(-200%);
+    z-index: 1000;
+
+    &:focus {
+        transform: translateY(0);
+    }
+}
+
+.button--primary-menu {
+	//background-color: darken( $base-background, 4% );
+    border: none;
+    //border-bottom-left-radius: 0.25em;
+	color: $font-heading-color;
+    padding: 0;
+    height: rem(50);
+    width: rem(50);
+    font-weight: $font-weight-normal;
+    text-transform: uppercase;
+    font-family: $base-heading-family;
+
+    &:hover,
+    &:focus {
+        .icon {
+            color: $brand-primary;
+        }
+    }
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;   
+    }
+    .button__text {
+        font-size: 0.5rem;
+        letter-spacing: 2px;
+    }
+    .icon {
+        font-size: 2rem;
+        margin-top: rem(-8);
+
+        @include trans( color );
+    }
+}
+
+.button--cta {
+    @extend .button--primary;
+}

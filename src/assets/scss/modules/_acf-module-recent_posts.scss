@@ -1,0 +1,14 @@
+/* assets/scss/modules/_acf-module-recent_posts.scss */
+
+.section--acf-module-recent-posts {
+	padding: 10vh 10vw;
+
+	.section__loop {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -2em;
+	}
+	.section__footer {
+		padding-top: 2rem;
+	}
+}

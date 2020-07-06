@@ -1,0 +1,32 @@
+/* assets/scss/base/_list.scss */
+
+ul {
+
+}
+ol {
+
+}
+li {
+
+}
+dl {
+
+}
+dd {
+
+}
+dt {
+
+}
+
+.list {
+	
+}
+.list--inline {
+	list-style: none;
+	padding-left: 0;
+	
+	> li {
+		display: inline-block;
+	}
+}

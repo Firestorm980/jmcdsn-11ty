@@ -1,0 +1,33 @@
+/* assets/scss/modules/_acf-module-hero.scss */
+
+.section--acf-module-hero {
+	padding: 10vh 10vw;
+	min-height: 100vh;
+	display: flex;
+	background-color: darken( $base-background, 4% );
+
+	.section__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.section__heading {
+		display: flex;
+		flex-direction: column;
+		line-height: 1.2;
+
+		.home & {
+			> span:not(.subheading) {
+				@include bp( lg ) {
+					font-size: 10vw;
+				}
+			}
+		}
+	}
+	.section__inner {
+		padding-top: rem(50);
+	}
+	.wysiwyg {
+	    max-width: 35em;
+	}
+}

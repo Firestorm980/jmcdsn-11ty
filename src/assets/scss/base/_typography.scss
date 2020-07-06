@@ -1,0 +1,249 @@
+/* assets/scss/base/_typography.scss */
+
+html {
+	font-size: 100%;
+}
+
+body {
+	$minvw: map-get( $breakpoints, 'xs' );
+	$maxvw: map-get( $breakpoints, 'lg' );
+
+	$minunit: rem(16);
+	$maxunit: rem(18);
+
+	@include fluid-type( font-size, $minvw, $maxvw, $minunit, $maxunit );
+
+	background-color: $base-background;
+	color: $font-body-color;
+	font-family: $base-font-family;
+	font-style:  $base-font-style;
+	font-weight: $base-font-weight;
+	line-height: $base-line-height;
+
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $font-heading-color;
+	font-family: $base-heading-family;
+	font-weight: $font-weight-bold;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	line-height: 1.2;
+
+	.subheading {
+		display: block;
+		font-size: 66.7%;
+		font-weight: $font-weight-light;
+		color: $brand-secondary;
+	}
+}
+
+.heading--1,
+h1 {
+	$minvw: map-get( $breakpoints, 'xs' );
+	$maxvw: map-get( $breakpoints, 'lg' );
+
+	$minunit: $font-size-h1 * 0.67;
+	$maxunit: $font-size-h1;
+
+	@include fluid-type( font-size, $minvw, $maxvw, $minunit, $maxunit );
+}
+.heading--2,
+h2 {
+	$minvw: map-get( $breakpoints, 'xs' );
+	$maxvw: map-get( $breakpoints, 'lg' );
+
+	$minunit: $font-size-h2 * 0.67;
+	$maxunit: $font-size-h2;
+
+	@include fluid-type( font-size, $minvw, $maxvw, $minunit, $maxunit );
+}
+.heading--3,
+h3 {
+	$minvw: map-get( $breakpoints, 'xs' );
+	$maxvw: map-get( $breakpoints, 'lg' );
+
+	$minunit: $font-size-h3 * 0.67;
+	$maxunit: $font-size-h3;
+
+	@include fluid-type( font-size, $minvw, $maxvw, $minunit, $maxunit );
+}
+.heading--4,
+h4 {
+	$minvw: map-get( $breakpoints, 'xs' );
+	$maxvw: map-get( $breakpoints, 'lg' );
+
+	$minunit: $font-size-h4 * 0.67;
+	$maxunit: $font-size-h4;
+
+	@include fluid-type( font-size, $minvw, $maxvw, $minunit, $maxunit );
+}
+.heading--5,
+h5 {
+	font-size: $font-size-h5;
+
+	@include bp( md ) {
+		font-size: $font-size-h5;
+	}
+}
+.heading--6,
+h6 {
+	font-size: $font-size-h6;
+
+	@include bp( md ) {
+		font-size: $font-size-h6;
+	}
+}
+
+// Paragraph
+p {
+  margin-bottom: $base-font-size;
+  margin-top: 0;
+
+	~ h2,
+	~ h3,
+	~ h4,
+	~ h5,
+	~ h6 {
+		margin-top: 1em;
+	}
+}
+
+// Italic / Emphasis
+i,
+em {
+  font-style: italic;
+}
+
+// Bold / Strong
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
+
+// Underline
+// Inserted text
+u,
+ins {
+  text-decoration: underline;
+}
+
+// Stikethrough
+s,
+strike,
+del {
+  text-decoration: line-through;
+}
+
+blockquote {
+	$minvw: map-get( $breakpoints, 'xs' );
+	$maxvw: map-get( $breakpoints, 'lg' );
+
+	$minunit: em(18);
+	$maxunit: 1.414em;
+
+	max-width: 40em;
+	margin: 0 auto;
+
+	@include fluid-type( font-size, $minvw, $maxvw, $minunit, $maxunit );
+
+	.wysiwyg & {
+		padding-left: 5vw;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		margin: 2em 0 2em 5vw;
+		position: relative;
+
+		&:before {
+			content: '';
+			width: 2px;
+			height: 100%;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-image: linear-gradient( to bottom, $brand-primary, transparentize( $brand-primary, 1 ) );
+		}
+	}
+
+	p:first-of-type:before {
+		content: '“';
+	}
+	p:last-of-type {
+		margin-bottom: 0;
+		&:after {
+			content: '”';
+		}
+	}
+
+	cite {
+		//font-family: $base-font-family;
+		font-size: 1rem;
+
+		&:before {
+			content: '– ';
+		}
+	}
+}
+
+// Keyboard
+kbd {
+  background-image: linear-gradient( to bottom, $color-white, $gray-lighter );
+  border-color: hsl(0,0,85%) hsl(0,0,85%) hsl(0,0,75%);
+  border-radius: 0.675em;
+  border-style: solid;
+  border-width: 1px 1px 3px;
+  display: inline-block;
+  font-family: $base-font-family-mono;
+  padding: 0.675em 0.5em;
+  text-shadow: 0 1px 1px $color-white;
+}
+
+// Code
+code {
+  background-color: $gray-darker;
+  border-radius: 0.675em;
+  color: $color-white;
+  display: inline-block;
+  font-family: $base-font-family-mono;
+  padding: 0.675em 0.5em;
+}
+
+// Sample Output
+samp {
+  font-family: $base-font-family-mono;
+}
+
+pre {
+  font-family: $base-font-family-mono;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+time {
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+
+
+address {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+var {
+  font-family: $base-font-family-serif;
+}
+
+q {
+  font-family: $base-font-family-serif;
+}

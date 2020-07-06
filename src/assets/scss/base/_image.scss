@@ -1,0 +1,17 @@
+/* assets/scss/base/_image.scss */
+
+img {
+	height: auto;
+	max-width: 100%;
+
+	.js & {
+		@include trans( opacity );
+		&.lazyload,
+		&.lazyloading {
+			opacity: 0;
+		}
+		&.lazyloaded {
+			opacity: 1;
+		}
+	}
+}

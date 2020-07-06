@@ -1,0 +1,198 @@
+/*
+ * Breakpoints mixin. Makes media queries easier.
+ * Choose a point from the defined variable $breakpoints in _variables.scss or set your own.
+ */
+@mixin bp( $point, $type: min, $media: screen ){
+
+	// Look in the keys first
+	@if map-has-key( $breakpoints, $point ){
+		@if $type == max {
+			@media only #{$media} and ( max-width: #{inspect( map-get( $breakpoints, $point ) )} ){ @content; }
+		} @else if $type == min {
+			@media only #{$media} and ( min-width: #{inspect( map-get( $breakpoints, $point ) )} ){ @content; }
+		}
+	}
+		// Fallback to a 'manual' breakpoint.
+		// Check to make sure that it is a number and has a unit (px, em).
+	@else if type-of( $point ) == number and not unitless( $point ) {
+		@if $type == max {
+			@media only #{$media} and ( max-width: #{$point} ){ @content; }
+		} @else if $type == min {
+			@media only #{$media} and ( min-width: #{$point} ){ @content; }
+		}
+	}
+		// The point wasn't in the $breakpoints variable and isn't a valid unit.
+	@else {
+		@error "`#{$point}` is not a valid breakpoint.";
+	}
+
+}
+
+/**
+ * Transition mixin
+ * @param  {[type]} $properties: all            [description]
+ * @param  {[type]} $duration:   $base-duration [description]
+ * @param  {[type]} $timing:     $base-timing   [description]
+ * @param  {[type]} $delay:      0              [description]
+ * @return {[type]}              [description]
+ */
+@mixin trans( $properties: all, $duration: $base-duration, $timing: $base-timing, $delay: 0 ){
+	transition-property: $properties;
+	transition-duration: $duration;
+	transition-timing-function: $timing;
+	transition-delay: $delay;
+}
+
+/*
+ * Hide visually and from screen readers
+ */
+@mixin hidden {
+	display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+@mixin visuallyhidden {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+	/* many screen reader and browser combinations announce broken words as they would appear visually */
+	word-wrap: normal !important;
+
+	&.focusable:active,
+	&.focusable:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+}
+
+@mixin screen-reader-text {
+	@include visuallyhidden();
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+@mixin invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: " "; /* 1 */
+		display: table; /* 2 */
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+/**
+ * =======
+ * Bourbon
+ * =======
+ */
+
+/**
+ * Strips the unit from a number.
+ *
+ * @source https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_strip-units.scss
+ * @param  {Number (With Unit)} $value
+ * @return {Number (Unitless)}
+ */
+@function strip-units( $value ) {
+  @return ( $value / ( $value * 0 + 1 ) );
+}
+
+/**
+ * Convert pixels to ems.
+ * eg. for a relational value of 12px write em(12) when the parent is 16px
+ * if the parent is another value say 24px write em(12, 24)
+ *
+ * @source https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_px-to-em.scss
+ * @param  {Number} $pxval Value in pixels to convert
+ * @param  {Number} $base  The base pixels of the parent. Usually body/html. Default to 16.
+ * @return {String} The converted value in ems.
+ */
+@function em( $pxval, $base: $base-ems ) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1em;
+}
+
+/**
+ * eg. for a relational value of 12px write rem(12)
+ * Assumes $em-base is the font-size of <html>
+ *
+ * @source https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_px-to-rem.scss
+ * @param  {Number} $pxval Value in pixels to convert
+ * @return {String} The converted value in rems.
+ */
+@function rem( $pxval ) {
+	$base: $base-ems;
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1rem;
+}
+
+/**
+ * Truncates text and adds an ellipsis to represent overflow.
+ *
+ * @source https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/addons/_ellipsis.scss
+ * @param {Number} $width [100%] Max-width for the string to respect before being truncated
+ */
+@mixin ellipsis( $width: 100% ) {
+  display: inline-block;
+  max-width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+/*
+  This mixin can be used to set the object-fit:
+  @include object-fit(contain);
+  or object-fit and object-position:
+  @include object-fit(cover, top);
+*/
+@mixin object-fit($fit: fill, $position: null){
+  -o-object-fit: $fit;
+     object-fit: $fit;
+  @if $position {
+	  -o-object-position: $position;
+	     object-position: $position;
+  	font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+  } @else {
+  	font-family: 'object-fit: #{$fit}';
+  }
+}

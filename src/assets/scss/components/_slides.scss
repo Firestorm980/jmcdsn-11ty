@@ -1,0 +1,60 @@
+/* assets/scss/components/_slides.scss */
+
+.slides {
+	margin: 0;
+	padding: 0;
+}
+.slide {
+
+}
+.slide__figure {
+	margin: 0;
+}
+.slide__figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.slide__heading {
+	@extend h4;
+}
+.slide__caption {
+	display: block;
+	width: 100%;
+	padding: 1rem 10vw;
+	background-color: transparentize( $base-background, 0.2 );
+
+	&:empty {
+		display: none;
+	}
+}
+
+.slick-dots {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	padding: 1rem 0;
+
+	li {
+		display: inline-block;
+		margin: 0 0.125em;
+
+		&:hover,
+		&:focus,
+		&.slick-active {
+			> button {
+				color: $color-white;
+
+				&:before {
+					background-color: $brand-primary;
+				}
+			}
+		}
+	}
+	button {
+		@extend .button;
+		@extend .button--primary;
+	}
+}

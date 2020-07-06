@@ -1,0 +1,134 @@
+/* assets/scss/layouts/_header.scss */
+
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: rem(50);
+	display: block;
+	z-index: 100;
+	background-color: transparentize( darken( $base-background, 4% ), 0.2 );
+
+	&:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+
+	.button--primary-menu {
+		@include bp( md ) {
+			display: none;
+		}
+	}
+}
+
+.site-header__logo {
+	display: block;
+	position: relative;
+	width: rem(123);
+	height: rem(50);
+	text-align: center;
+	float: left;
+
+	&:before {
+		display: none;
+	}
+
+	svg {
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: auto;
+	}
+
+	.logo__background,
+	.logo__type path {
+		@include trans( fill );
+	}
+	.logo__background {
+		//fill: transparentize( darken( $base-background, 4% ), 0.2 );
+		fill: transparent;
+	}
+	.logo__type {
+		fill: $font-heading-color;
+	}
+
+	&:hover,
+	&:focus {
+		.logo__background {
+			//fill: $brand-primary;
+		}
+		.logo__type {
+			//fill: $;
+		}
+		[data-letter="J"],
+		[data-letter="M"],
+		[data-letter="C"] {
+			fill: $brand-primary;
+		}
+	}
+
+	+ button {
+		float: right;
+	}
+}
+
+.site-header__navigation {
+	display: flex;
+	flex-direction: column;
+	background-color: transparentize( $color-black, 0.1 );
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 20;
+
+	@include trans( ( opacity, visibility ) );
+
+	@include bp( md ) {
+		opacity: 1;
+		visibility: visible;
+		flex-direction: row;
+		position: static;
+		background-color: transparent;
+		width: auto;
+		height: 100%;
+		align-items: center;
+		justify-content: flex-end;
+		overflow: auto;
+	}
+
+	&[aria-hidden="false"] {
+		opacity: 1;
+		visibility: visible;
+	}
+	.social {
+		padding: 1rem;
+
+		@include bp( md ) {
+			display: none;
+		}
+
+		> ul {
+			margin: 0 -0.5rem;
+		}
+		li {
+			padding: 0 0.5rem;
+		}
+		a {
+			color: $color-white;
+
+			&:hover,
+			&:focus {
+				background-color: transparent;
+				color: $brand-primary;
+			}
+		}
+	}
+}
