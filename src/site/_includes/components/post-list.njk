@@ -1,0 +1,26 @@
+<ul
+    class="post-list"
+    reversed>
+    {% for item in postListItems %}
+        <li class="post-list__item">
+            <article class="card">
+                <div class="card__header">
+                    <h3 class="heading entry__heading">
+                        <a href="{{ item.url }}" rel="bookmark">{{ item.data.title }}</a>
+                    </h3>
+                    <time class="card__date" datetime="{% dateFormat item.data.date %}">
+                        {% dateFormat item.data.date, 'dddd, MMMM D, YYYY' %}
+                    </time>
+                </div>
+                <div class="card__content">
+                    <p>{{item.data.description}}</p>
+                </div>
+                <div class="card__footer">
+                    <a href="{{ item.url }}" class="button button--primary">
+                        Read more<span class="screen-reader-text"> about "{{ item.data.title }}"</span>
+                    </a>
+                </div>
+            </article>
+        </li>
+    {% endfor %}
+</ul>
