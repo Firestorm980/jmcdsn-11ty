@@ -1,0 +1,15 @@
+---
+layout: layouts/page.njk
+permalink: /posts/
+eleventyNavigation:
+  key: Archive
+  order: 2
+title: Archive
+---
+
+<h1>Archive</h1>
+
+{% set postListItems = collections.posts %}
+{% set postListItemsCounter = collections.posts | length %}
+{% include "components/post-list.njk" %}
+{% include "components/pagination.njk" %}

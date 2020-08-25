@@ -17,6 +17,7 @@ module.exports = function(eleventyConfig) {
 
   // Filters
   eleventyConfig.addFilter( 'dump', require('./src/_11ty/filters/dump' ) );
+  eleventyConfig.addFilter( 'head', require('./src/_11ty/filters/head' ) );
   
   // Shortcodes
   eleventyConfig.addShortcode( 'copyrightDate', require( './src/_11ty/shortcodes/copyrightDate' ) );
