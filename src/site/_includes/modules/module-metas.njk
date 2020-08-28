@@ -1,0 +1,32 @@
+<!-- parts/modules/module-metas.php -->
+<?php
+/**
+ * JMCDSN - Module : Logos
+ *
+ * @package jmcdsn
+ */
+
+$module_id    = uniqid( 'module_' );
+$module_base  = get_sub_field( 'module_base' );
+$module_metas = get_sub_field( 'module_metas' );
+
+?>
+<section class="section section--module section--module-metas">
+	{% include 'components/module-base.njk' %}
+	<div class="section__module">
+		<?php if ( $module_metas ) : ?>
+		<div class="metas">
+			<?php foreach ( $module_metas as $meta_group ) : ?>
+				<div class="meta meta--show">
+					<h3 class="meta__heading"><?php echo esc_html( $meta_group['meta_group_heading'] ); ?></h3>
+					<ul class="meta__list list">
+						<?php foreach ( $meta_group['metas'] as $meta ) : ?>
+							<li><?php echo esc_html( $meta['meta'] ); ?></li>
+						<?php endforeach; ?>
+					</ul>
+				</div>
+			<?php endforeach; ?>			
+		</div>
+		<?php endif; ?>
+	</div>
+</section>
