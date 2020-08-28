@@ -1,0 +1,12 @@
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.post-list__item {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
