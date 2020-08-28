@@ -1,0 +1,32 @@
+<!--
+/**
+ * JMCDSN - Components : Module Base
+ *
+ * @package jmcdsn
+ */
+-->
+
+{% set headingClasses = [ 'section__heading' ] %}
+{% if module.hide_heading %}
+    {{ headingClasses.push( 'screen-reader-text' ) }}
+{% endif %}
+
+<div class="section__base">
+    <div class="section__header">
+        <h2 class="{{ headingClasses | join( ' ' ) }}">
+            {{ module.heading }}
+            {% if module.subheading %}
+                <span class="subheading">{{ module.subheading }}</span>
+            {% endif %}
+        </h2>
+    </div>
+    {% if module.show_content %}
+        <div class="section__content">
+            <div class="wysiwyg">
+                <p>
+                    {{ module.content | nl2br | safe }}
+                </p>
+            </div>
+        </div>
+    {% endif %}
+</div>
