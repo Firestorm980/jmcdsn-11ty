@@ -1,0 +1,18 @@
+{% if paginationNextUrl or paginationPrevUrl %}
+    <nav class="pagination">
+      {% if paginationPrevUrl %}
+        <a href="{{ paginationPrevUrl }}" data-direction="backwards" class="pagination-link pagination-link--left">
+          <span>
+            {{ paginationPrevText if paginationPrevText else 'Newer' }}
+          </span>
+        </a>
+      {% endif %}
+      {% if paginationNextUrl %}
+        <a href="{{ paginationNextUrl }}" data-direction="forwards" class="pagination-link pagination-link--right">
+          <span>
+            {{ paginationNextText if paginationNextText else 'Older' }}
+          </span>
+        </a>
+      {% endif %}
+    </nav>
+{% endif %}
