@@ -1,8 +1,8 @@
 <header id="masthead" class="site-header" role="banner">
 
-	<a class="button button--skip" href="#main">Skip to content</a>
+	<a class="" href="#main">Skip to content</a>
 
-	<a href="{{metadata.url}}" class="site-header__logo">
+	<a href="{{metadata.url}}" class="">
 
 		<span class="screen-reader-text">{{metadata.title}}</span>
 
@@ -29,9 +29,9 @@
         </svg>
     </a>
 
-	<div id="siteHeaderNavigation" class="site-header__navigation">
+	<div id="siteHeaderNavigation" class="">
 
-        <nav id="siteNavigation" class="navigation navigation--primary" aria-label="Primary Menu">
+        <nav id="siteNavigation" class="" aria-label="Primary Menu">
             <ul id="menu-primary" class="menu">
             {%- for entry in collections.all | eleventyNavigation %}
                 <li class="menu__item{% if entry.url == page.url %} menu__item--active{% endif %}">

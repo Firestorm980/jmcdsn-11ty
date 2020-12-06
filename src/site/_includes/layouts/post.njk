@@ -4,15 +4,15 @@ templateClass: tmpl-post
 bodyClass: single-post
 ---
 
-<article class="entry">
-    <header class="entry__header">
-        <h1 class="entry__heading">{{ title }}</h1>
-        <time class="entry__date" datetime="{% dateFormat date %}">
+<article class="">
+    <header class="">
+        <h1 class="">{{ title }}</h1>
+        <time class="" datetime="{% dateFormat date %}">
             {% dateFormat date, 'dddd, MMMM D, YYYY' %}
-        </time>    
+        </time>
     </header>
-    <div class="entry__inner">
-        <div class="entry__content">
+    <div class="">
+        <div class="prose">
             {{ content | safe }}
         </div>
     </div>

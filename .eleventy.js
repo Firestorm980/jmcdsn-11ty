@@ -1,11 +1,3 @@
-const fs = require("fs");
-const path = require("path");
-
-const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
-const manifest = JSON.parse(
-  fs.readFileSync(manifestPath, { encoding: "utf8" })
-);
-
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 
@@ -19,7 +11,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter( 'dump', require('./src/_11ty/filters/dump' ) );
   eleventyConfig.addFilter( 'head', require('./src/_11ty/filters/head' ) );
   eleventyConfig.addFilter( 'includesvg', require( './src/_11ty/filters/includesvg' ));
-  
+
   // Shortcodes
   eleventyConfig.addShortcode( 'copyrightDate', require( './src/_11ty/shortcodes/copyrightDate' ) );
   eleventyConfig.addShortcode( 'dateFormat', require( './src/_11ty/shortcodes/dateFormat' ) );
@@ -36,15 +28,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/vendor": "vendor" });
 
   // Reload the page every time the JS/CSS are changed.
-  eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
-
-  // Adds a universal shortcode to return the URL to a webpack asset. In Nunjack templates:
-  // {% webpackAsset 'main.js' %} or {% webpackAsset 'main.css' %}
-  eleventyConfig.addShortcode("webpackAsset", function(name) {
-    if (!manifest[name]) {
-        throw new Error(`The asset ${name} does not exist in ${manifestPath}`);
-    }
-    return manifest[name];
+  eleventyConfig.setBrowserSyncConfig({
+    notify: true,
+    files: [
+      './dist/assets/**/*.css',
+      './dist/assets/**/*.js'
+    ]
   });
 
   return {
