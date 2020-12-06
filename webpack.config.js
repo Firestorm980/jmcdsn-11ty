@@ -1,20 +1,21 @@
-const path = require("path");
-const ManifestPlugin = require("webpack-manifest-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require('path')
+const ManifestPlugin = require('webpack-manifest-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const WebpackBar = require('webpackbar')
 
-const isDev = process.env.NODE_ENV === "development";
+const isDev = process.env.NODE_ENV === 'development'
 
-const baseFilename = isDev ? "index" : "index.[contenthash]";
+const baseFilename = isDev ? 'index' : 'index.[contenthash]'
 
 module.exports = {
-  mode: isDev ? "development" : "production",
+  mode: isDev ? 'development' : 'production',
   entry: [
-    path.resolve(__dirname, "src", "assets", "js", "index.js"),
-    path.resolve(__dirname, "src", "assets", "scss", "index.scss"),
+    path.resolve(__dirname, 'src', 'assets', 'js', 'index.js'),
+    path.resolve(__dirname, 'src', 'assets', 'css', 'index.css')
   ],
   output: {
-    path: path.resolve(__dirname, "dist", "assets"),
-    filename: `${baseFilename}.js`,
+    path: path.resolve(__dirname, 'dist', 'assets'),
+    filename: `${baseFilename}.js`
   },
   module: {
     rules: [
@@ -22,21 +23,22 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /(node_modules)/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env"],
-          },
-        },
+            presets: ['@babel/preset-env']
+          }
+        }
       },
       {
-        test: /\.s[ac]ss$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"],
-      },
-    ],
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+      }
+    ]
   },
-  devtool: isDev ? "eval" : "source-map",
+  devtool: isDev ? 'eval' : 'source-map',
   plugins: [
     new MiniCssExtractPlugin({ filename: `${baseFilename}.css` }),
-    new ManifestPlugin({ publicPath: "/assets/" }),
-  ],
-};
+    new ManifestPlugin({ publicPath: '/assets/' }),
+    new WebpackBar()
+  ]
+}
