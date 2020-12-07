@@ -1,9 +1,9 @@
-<div class="social">
-    <ul class="list list--inline">
+<div class="">
+    <ul class="flex items-center">
         {% for network in social.networks %}
-            <li class="list-item">
-                <a href="{{ network.url }}">
-                    <span class="screen-reader-text">{{ network.name }}</span>
+            <li class="text-xl ml-2">
+                <a href="{{ network.url }}" class="text-gray-500 hover:text-blue-600 dark:text-gray-600 dark:hover:text-brand-primary-light">
+                    <span class="sr-only">Visit me on {{ network.name }}</span>
                     <svg class="icon">
                         <use xlink:href="#icon-{{ network.slug }}"></use>
                     </svg>

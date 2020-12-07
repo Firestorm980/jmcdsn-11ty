@@ -1,0 +1,9 @@
+<nav id="siteNavigation" aria-label="Primary Menu">
+	<ul id="menu-primary" class="flex flex-wrap font-display -mx-2">
+	{%- for entry in collections.all | eleventyNavigation %}
+		<li class="{% if entry.url == page.url %}{% endif %} px-2">
+			<a href="{{ entry.url | url }}" class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-brand-primary-light">{{ entry.title }}</a>
+		</li>
+	{%- endfor %}
+	</ul>
+</nav><!-- .main-navigation -->

@@ -1,8 +1,12 @@
-<footer id="colophon" class="">
-	<div class="">
-		<div class="">
-			<p>&copy; {% copyrightDate %} Jon Michael Christensen Design</p>
+<footer id="colophon" class="p-4 md:py-screenh-10 bg-gray-50 dark:bg-gray-900">
+	<div class="flex flex-col items-center md:items-start mx-auto max-w-screen-lg">
+		{% include "components/navigation.njk" %}
+		<span class="flex my-4 h-0.5 w-full bg-gradient-to-r from-blue-700 via-blue-400 dark:from-brand-primary-dark dark:via-brand-primary-light to-transparent"></span>
+		<div class="flex justify-between text-sm w-full">
+			<div class="text-gray-500 dark:text-gray-600">
+				<p>&copy; {% copyrightDate %} Jon Michael Christensen Design</p>
+			</div>
+			{% include "components/social.njk" %}
 		</div>
-        {% include "components/social.njk" %}
 	</div>
 </footer>

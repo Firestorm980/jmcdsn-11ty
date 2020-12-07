@@ -1,5 +1,8 @@
 /* stylelint-disable at-rule-no-unknown */
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Oswald&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* Tailwind base */
 @import "tailwindcss/base";
 
@@ -11,7 +14,37 @@
 
 /* Custom Base */
 @layer base {
+	:focus {
+		outline: 1px dotted currentColor;
+		outline-offset: -2px;
+	}
+
 	a {
-		@apply text-brand-primary;
+		@apply transition-colors;
+	}
+
+	body {
+		@apply font-sans;
+
+		font-size: clamp(theme('fontSize.base'), 3vw, theme('fontSize.xl'));
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-bold;
+	}
+}
+
+/* Custom components */
+@layer components {
+	.icon {
+		fill: currentColor;
+		height: 1em;
+		vertical-align: middle;
+		width: 1em;
 	}
 }
