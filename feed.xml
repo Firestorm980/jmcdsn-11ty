@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>JMCDSN</title>
+  <subtitle></subtitle>
+  <link href="https://jmcdsn.com//feed.xml" rel="self"/>
+  <link href="https://jmcdsn.com//"/>
+  <updated>2019-02-09T00:00:00-00:00</updated>
+  <id>https://jmcdsn.com/</id>
+  <author>
+    <name>Jon Michael Christensen</name>
+    <email>jon@jmchristensendesign.com</email>
+  </author>
+  
+    
+    <entry>
+      <title>The New and Improved Site Launches!</title>
+      <link href="https://jmcdsn.com//my-thoughts/the-new-and-improved-site-launches/"/>
+      <updated>2013-03-12T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/the-new-and-improved-site-launches/</id>
+      <content type="html">
+        <![CDATA[
+      <p>Hello everyone and welcome to the <em>new</em> site!</p>
+<p>It's been a long time coming, but I've finally got the new version up. There are some major changes, both in design on front and in the guts of the site. I'm happy to say that I've gotten all the goals I wanted for this site accomplished so far. Thanks to much of my new development experience, I was able to include things I could never have even approached with my original site when I graduated in 2010.</p>
+<h2>Architecture Overhaul</h2>
+<p>The old site was built statically on plain ol' fashioned HTML and CSS. Updating was a pain (which is probably why it never really happened). The new site is... well... <em>still</em> built on HTML and CSS, but I've brought some new guys into the party. Namely, PHP and WordPress. Over my last couple years working at my current job I've gotten to know these two pretty well, especially over the last few months where now I work with them on a daily basis. Therefore, it was a no brainer to build the new site utilizing the power of the WordPress admin. It's afforded me new opportunities, including the brand new blog and easy content management and editing.</p>
+<h2>Updated Me, Updated Brand</h2>
+<p>Along with the new technical abilities, the site has also changed its design pretty significantly. I decided my logo needed an update to reflect who I am at this point. I also changed up some of my branding to correspond with new typefaces. League Gothic provides a nice, bold look that is great for my new logo and headings. But the real workhorse is Source Sans Pro. Later on when I do coding examples I plan to use its sibling, Source Code Pro. I've attempted to go cleaner this time around, and I hope it shows.</p>
+<h2>Responsive Design for All Sizes</h2>
+<p>Another feature I'm excited about is that the site is utilizing responsive design. While I didn't do a mobile first approach with this (something which I'll have to reserve for the next version of the site), the results are pretty good so far. I intend on doing more testing and bug fixing in the coming weeks to try to iron out some details and make the experience more enjoyable for everyone.</p>
+<h2>In the Future...</h2>
+<p>I'm not done with this site yet. One of the great things about the web is the ability to improve your product <em>after</em> release. Along with hammering out the details of the responsive portion, I plan to add in extra little features and details to give the site the feel I want it to have. A big one being a system for comments on posts that I'm comfortable with. Further, I intend on continuing to add projects and blog posts as I am able. It should be a lot easier now to do so, and I guess that means I don't really have an excuse anymore.</p>
+<p>Thanks for stopping by! Be sure to read up on new posts as they come up.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>Re: Responsive Design Is Always Appropriate</title>
+      <link href="https://jmcdsn.com//my-thoughts/re-responsive-design-is-always-appropriate/"/>
+      <updated>2013-03-31T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/re-responsive-design-is-always-appropriate/</id>
+      <content type="html">
+        <![CDATA[
+      <p>Recently, there was an article by <a href="http://www.vanseodesign.com">Vanseo Design</a> (which posts lots of great articles about the web), about when responsive design is appropriate. He says this near the end:</p>
+<blockquote>
+<p>Responsive design is the new baseline. It’s the new foundation for building a site and it serves as a catchall for everything you don’t specifically design for, which will include far more devices than you will design for.</p>
+<p>Many sites will never need more than this baseline. Those that do will create device specific designs to enhance the responsive one, not replace it.</p>
+</blockquote>
+<p>You can read the post <a href="http://www.vanseodesign.com/web-design/responsive-always-appropriate/">here</a>. Which was a response from several others about dedicated mobile sites versus responsive.</p>
+<p>His ultimate conclusion from the back and forth was this: your base design should be responsive, tack on dedicated experiences as needed by which platforms you want to target. While I think that this is great (and correct) advice, something bugged me about it.</p>
+<h2>Cool Notion. But...</h2>
+<p>Think about that last line: &quot;Those that do will create device specific designs to enhance the responsive one, not replace it.&quot; According to some other industry experts, if we are really doing our job designing responsively in a responsible way, we really shouldn't need any dedicated solution for any platform. Needs will have already been addressed though responsible design, development, and testing decisions using the tools at our disposal.</p>
+<p>Furthermore at that point, a dedicated solution seems somewhat redundant and unnecessary. You already have something that should work on everything. Why bother maintaining something extra <em>just</em> for the iPhone, Kindle, or Nook? Why are we singling out those users? Didn't we just say everyone should be alright if we are doing our jobs?</p>
+<p>I hear this already: &quot;But the client wanted us to do it!&quot; Honestly, I haven't met a client who wanted to pay for both a responsive <em>and</em> dedicated solution at the same time. Further, I see this as possibly the clients playing favorites to a particular device or platform. Even if we're just &quot;enhancing&quot; the original design, we're still creating a situation where one person gets one thing, and another person gets something else. It's no different than saying &quot;This site was built for Internet Explorer only. Come back and use that.&quot; If they really must cater to a specific platform for specific (and legitimately verifiable)  reasons, that's not a job for a responsive site. Instead, maybe it's the job of a dedicated native application.</p>
+<p>Web sites are inherently open. They are meant to be seen and used by anyone. If you go only after one segment, one device type, or one browser, you are betraying the very core of what a web site is. Surely, a better solution is available. We don't want to be going back to the days of &quot;you need X to view this site&quot;. We also don't want to take away (or add) information for just a particular subset of users. That doesn't really solve the problem. That's not the web.</p>
+<h2>Conclusion</h2>
+<p>As always, we need to question why. Why does the client feel they need a dedicated mobile site? What are they trying to accomplish there? Maybe there is a better way to get the job done. Maybe if they absolutely need to go after particular users, a native application would work better. The advantage of which is the site is always just the site, no matter how you access it. No more, no less. The native application is a separate entity where we can refine the experience to the smallest and subtlest detail for that system and its users. I know if I were a user and my buddy and I visited the same site on two different platforms and got two differing experiences, whoever got the short end of that stick wouldn't be a happy camper. It certainly wouldn't endear me to the company knowing that I wasn't as important to get some extra content or feature.</p>
+<p>With any site we should always aim to keep experiences, content, and features consistent across any and all ways a user gets there. Anything else is just playing favorites. Possibly to the detriment of the site and the brand.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>Responsive Retrofits</title>
+      <link href="https://jmcdsn.com//my-thoughts/responsive-retrofits/"/>
+      <updated>2013-04-13T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/responsive-retrofits/</id>
+      <content type="html">
+        <![CDATA[
+      <p>I want to talk about something I've been seeing around a lot lately. A phrase that makes my skin crawl a bit when I hear it. <em>Responsive retrofitting</em>. I'll tell you why...</p>
+<p></p>
+<h2>Dirty Words</h2>
+<p>How many client meetings have I overheard where the conversation gets to what their mobile strategy will be with their old fixed-width site? How many phone calls with our SEO department when the client says that their conversion on mobile devices just isn't cutting it? How many times have I heard &quot;We'll just do a retrofit. We can think about a real design later.&quot;? The answer: too many times.</p>
+<p>I understand the reasons clients and businesses have for wanting to do this. It makes the client happy. Clients get their &quot;solution&quot; that's mobile friendly with their new market in mind without breaking the bank or investing the time and energy for a new solution. Businesses get some extra spending money while the client saves up for the next phase which they'll hopefully come back for. Everybody wins. Or do they?</p>
+<p>The people we've forgotten in this scenario are the users. They lose. Why? They're getting a site they can comfortably access now. They should be happy! But, I don't think they are.</p>
+<p></p>
+<h2>Problems with a retrofit</h2>
+<p>Retrofitting means we're going to take the current site made for desktop and try to jam it into the mobile arena. That means we could be inheriting all sorts of problems. A slew of fixed-width widgets and elements that need to be converted or otherwise re-laid out (or in some cases cut entirely, which is a bad practice in itself). Outdated or inefficient code, especially if the site was made by another party than your own. Another <a href="http://www.guypo.com/uncategorized/real-world-rwd-performance-take-2/">recent study</a> of responsive sites shows that page weight at various sizes is hardly different for sites that were <em>designed</em> from the beginning to be responsive. How are we likely to fair when we're retrofitting one where we may have less control or no choice but to keep that weight? User interface concerns are an issue. Some things were made with a large screen in mind and <em>need</em> that space to work as intended. Perhaps the biggest concern is that since we've decided to do a quick fix, we may not have the time or budget to address these concerns properly.</p>
+<p>All these problems hit the end user. It's not going to be pretty. A UI from the desktop jammed into a mobile space means awkward side effects to the experience. Performance issues of load times and potential page bloat means slow loading and bad response times, equating to a sour taste of the site (and brand) for the user. That leads to a bad view of the company the user is visiting. That doesn't help the client's end game. It doesn't help your business either, as the client is unlikely to be happy, because their users are unhappy. Worst of all, its a half-assed approach to design. We're forcing a solution upon something that demands something new. That's not design.</p>
+<p></p>
+<h2>Conclusion</h2>
+<p>So what do I think we do if we're able? Simple, wait for a time when the client is willing and able to make a proper solution. Avoid the temptation to try to force the old site to work in a new context. There are probably other problems that need to be solved with the current implementation.</p>
+<p>Responsive design is not a bandage for a bigger problem. It is not a quick fix. It is not just an add on option. Responsive design is a technique and a new way of thinking about our sites. You're potentially doing more harm than good when you retrofit.</p>
+<p>Proper responsive design (and I'd argue design in general) is not easy. It takes planning and coordination. It means thinking ahead on the goals of the project and about all the literal shapes it could take. Most importantly, it means taking all these things into account at the beginning with all interested parties. Only then will you be able to provide a solid, well thought out solution to the real problems your client faces.</p>
+<p><strong>Update:</strong> There's an article out today that was posted through <em>Smashing Magazine's</em> Twitter. You can read it <a href="http://webstandardssherpa.com/reviews/responsive-retrofitting/">here</a>. A lot of it is more the &quot;how-to&quot; of doing this, but there are some great points (especially near the end) in the article. Basically, if you must do a retrofit, be sure to take multiple factors into account before you reach that conclusion. The &quot;Pitfalls to Avoid&quot; and &quot;Things to Do&quot; make a good quick checklist of things to consider if you're thinking of doing a retrofit. Many of the pitfalls are similar to points I'm making above. Watch out for these when deciding if it's the right thing to do. It will depend on the constraints of the project.</p>
+<p>I also think it makes a good point that something is better than nothing in many instances. I'd like to add an addendum to that saying that a <em>responsibly made</em> something is better than nothing. Don't just throw queries on it and call it a day. Be responsible and consider the performance, usability, and continuity issues between devices, browsers, and screen sizes when doing your retrofit. Here's <a href="http://mobile.smashingmagazine.com/2013/03/18/retrofit-a-website-to-be-responsive-with-rwd-retrofit/">another article</a> from <em>Smashing</em> that has a good list of approaches as well as pros and cons for each  if you're considering a retrofit.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>Design != Art</title>
+      <link href="https://jmcdsn.com//my-thoughts/design-is-not-art/"/>
+      <updated>2013-05-17T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/design-is-not-art/</id>
+      <content type="html">
+        <![CDATA[
+      <p>Recently, I was reading my Feedly when I came around to a story entitled &quot;Dealing With Overly Opinionated Clients&quot; published <a href="http://speckyboy.com/2013/05/15/dealing-with-overly-opinionated-clients/">here</a> on Speckyboy.com. While the article itself is quite good and worth the read, there was a particular bit that stuck out more in particular.</p>
+<blockquote>
+<p>Non-creative people tend to see design as something subjective, much like art. However, design and art are very different. Whereas art is created mainly to please the artist, design has to please the people who use it.</p>
+</blockquote>
+<p>Something about that statement hit home to me, especially where I'm at now. I've read and heard things like it before in a few other blogs over the last few months, and honestly, I've been hearing and reading about it a lot longer.</p>
+<p>So what's the big deal right? Well, it comes down to what I'm about to explain.</p>
+<p></p>
+<p></p>
+<h2>Uncomfortable Revelations</h2>
+<p>I'm seeing it all over the place. I saw it before I graduated not too long ago, but I'm seeing it even more now that I've been working for awhile. I'm seeing it clearer now that I'm exposed to what I'm coming in contact with on a daily basis.</p>
+<p>There are a lot of people out in the world who believe that design is art. To those people, design is all about looks. It's a canvas like a painting that must be filled in. There's no rhyme or reason to it. All the design must do is look good to accomplish its goal. No more and no less.</p>
+<p>Now, I knew before I graduated that people like this existed. Especially in the world of clients. Honestly, that's not a big deal to me. In fact, its to be expected. It's nothing new really. Hell, I had friends who I would joke with from other degrees and professions who would give me a hard time on this very subject.</p>
+<p>What I didn't realize is that people like this exist in my own profession.</p>
+<p></p>
+<h2>On the Inside</h2>
+<p>At first, this made me quite angry. It seems so silly to me, given what I was taught about process and iteration and objectives. Designs are solutions first. Good looks will usually follow a solid solution. Good design asks &quot;why?&quot;. How can you be a so-called &quot;designer&quot; and never ask that question and only care about how something looks?</p>
+<p>It baffled me. I suppose to an extent it still does. But today instead of anger about this predicament, I feel sadness at the whole affair.</p>
+<p>Reading the quote above gave me pause. Maybe those others in our profession never moved beyond thinking that design was art when they went to school (if they did). Maybe to them its more about them making their mark on a project than providing a worthwhile solution. Maybe its a combination of factors. I'm not entirely sure.</p>
+<p>And that's where how I feel comes into play. Sadness that there are those in the design community who are either in it for themselves to make &quot;art&quot; or that they never learned what real design is. I more so feel sadness for our clients and our profession as a whole. The clients don't get well thought out solutions, they get &quot;something that looks good.&quot; It doesn't really get at their goals in quite the right way. I feel sadness for our profession because the idea that design is art will continue to flourish because of this way of operating. Unfortunately, it will continue to create a barrier of misunderstanding between real designers and their clients and misinformation will continue to circulate among those who never are educated.</p>
+<p></p>
+<h2>Conclusion</h2>
+<p>How to stop this? Well, before we can educate our clients about the value of good design, we need to make sure we are educating ourselves <em>and</em> future designers. Not just those designers at big colleges and universities with outstanding programs, but the small ones as well. After that, it may only be a matter of time for the message to spread of the true value of real design.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>New Gig!</title>
+      <link href="https://jmcdsn.com//my-thoughts/new-gig/"/>
+      <updated>2013-06-03T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/new-gig/</id>
+      <content type="html">
+        <![CDATA[
+      <p>It's been awhile since I posted my thoughts, but that's because I've been in the midst of a job hunt. Thankfully, it has been successful and I'm going to be moving on soon! Reasons being outlined below:</p>
+<p>If you haven't noticed from some of my blog postings, they can seem more like rants (sorry about that). While I wouldn't say anything bad about any one person at my old place of employment, there are most definitely things I dislike about how process and designing sites are approached, as well as how much input and criticism is allowed from people involved on the project. This goes especially for the development side of things.</p>
+<p>I believe in the way I was taught to design. The way I was taught was much more based on facts, design theory, statistics, reiteration, and critique (so much so that I genuinely miss a good critique). It's not the way they do things. Fair enough, I suppose. Everybody does things differently, even within the same school of thought. There are other problems relating to the process there, but I won't get into them. When you get down to it though, the motivation and the process employed there is just not something I can get behind anymore.</p>
+<p>So, what am I looking forward to in the future at this new place? Primarily, people who think much more in line with how I was schooled. I went to an AIGA meet up in the cities not too long ago. It was so refreshing talking and listening to people who just understand what value it is to have a good design process. It was like coming up out of the water and getting a huge gulp of fresh air. Thankfully, the people at my new job seem to also understand these principles. Aside from that, bigger fish for clients is always fun too. I look forward to stretching my creative and technical wings with people who have the same goals.</p>
+<p>More posts to come!</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>Re: In RWD We Trust – Is this trust misplaced?</title>
+      <link href="https://jmcdsn.com//my-thoughts/re-rwd-trust-trust-misplaced/"/>
+      <updated>2013-11-08T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/re-rwd-trust-trust-misplaced/</id>
+      <content type="html">
+        <![CDATA[
+      <p>I recently read this article on Web Design Ledger entitled, <em><a href="http://webdesignledger.com/trends-2/in-rwd-we-trust-is-this-trust-misplaced">In RWD We Trust – Is this trust misplaced?</a></em> and, like many of the other people who have read it, I was disappointed with some of the information the article offered up.</p>
+<blockquote>
+<p>RWD is really not the be all and end all of a successful online identity. It might work for some and might not deliver on the expectations of others.</p>
+</blockquote>
+<p>I think I mostly agree with this main statement. Having a responsive design doesn't guarantee a site will be successful. Nor does a responsive design live up to some hype that some markers surround it with, like it is the holy grail of solutions or a silver bullet. While I agree with this statement, I took issue with the statements that the author used to support his idea that responsive web design isn't right, on some level, for all.</p>
+<h2>Responsive Web and Your Audience</h2>
+<p>The author uses the example of a user group for a website that is primarily desktop users, specifically senior citizens. Let's expand this argument to say that we have a hypothetical client that has a primary user base that mainly uses desktops and not mobile. I'd say there are still reasons to at least make a partially responsive site.</p>
+<p>Responsive designs work not just for mobile, but desktops as well. Keep in mind, responsive design mainly works off of view port size and therefore the window size. If a user has multiple windows on their screen or makes their browser smaller, they can benefit from being able to see a layout that is able to show them information without horizontal scrolling. This also allows for support of zooming in the browser and various desktop resolutions. I found it interesting that senior citizens were the example when I've known that that particular group are more prone to either zoom their window or set a lower screen resolution for easier reading. Sounds like they would also benefit.</p>
+<p>While the main user group may not be using different devices, minor groups may be. Depending on the data and the situation, it may be worth it to at least include minor support for responsive.</p>
+<p>Saying that you currently don't have any visitors with smaller screens now doesn't mean there won't be later. In addition, you may not have those visitors or be able to retain them because you don't have a good solution for them. I've seen sites I've built get many more visits from varied devices after their redesign to responsive. While that's not a solid counter argument in itself, it is worth considering. It is also worth considering that desktop usage is starting to waiver while mobile is going up. Your user base will most like move with it over time.</p>
+<h2>Content Value</h2>
+<p>The author follows up with this argument on content:</p>
+<blockquote>
+<p>Just the fact that your website renders effectively on mobile devices doesn’t lead to improved brand awareness, which in turn translates into improved traffic and better conversions for your site. If the content offers no real value to the user, your site isn’t going to find traction on mobile devices.</p>
+</blockquote>
+<p>Again, I agree with the statement above. Good content is everything, responsive or not. If your site doesn't have good content that someone will find useful, your website doesn't really have much of a point. However, his next part of the content argument is what bothers me:</p>
+<blockquote>
+<p>Contextual content is the key to leveraging the immense potential of RWD. But, if the website content displayed on mobile devices doesn’t satisfy the contextual requirements of the target users, why have RWD in the first place. In this case, it really doesn’t deliver a lot of value in any way or form.</p>
+</blockquote>
+<p>Firstly, I don't agree with contextual content for many sites. Why? Because with the current technology the way it is, you can't accurately guess my context when I'm using a particular device. Sure, you can guess, but that's all it is. Google recently posted in a survey that many people use their phones to browse the web... wait for it... on the sofa at home. Not &quot;out and about&quot; like most people who preach the contextual argument will say. In my opinion, guessing the context of a user is risky at best. Not only that, it can be annoying to a user if you get the context wrong. For his last sentence, I'd argue that if your content isn't delivering value in mobile (in any context), then you need to ask if it is delivering value in desktop. If you can't justify the content, it probably doesn't need to be there for anyone. This is part of a proper mobile first approach.</p>
+<h2>Responsive Performance</h2>
+<p>Okay. This argument is actually a little bit more powerful than the others. Its no secret that responsive sites tend to be as heavy, or in rare cases heavier than, their desktop counterparts. However, this is more about improper implementation. There are responsive sites that, when made properly, can actually handle loading times and resources quite efficiently so that they do much better than their desktop versions. The tools are available to do it right, we just have to make use of them. Progressive enhancement people!</p>
+<p>The author acknowledges this. However, he goes on to say that designing for multiple screen sizes and devices is inherently complex. While I'd say it certainly can be hard, properly planning the site in the beginning can take away a lot of that complexity. Some of the work of responsive is easy (fluid images, percentage widths, vector assets) and again, with proper tools, can become secondhand nature.</p>
+<p>I'd say that because this is still such a new technique, many designers are still trying to figure out how to deal with designing for it and are having a hard time planning because of it. I know people I've worked with have had especially hard times with it. In time, we'll have more experience making these sites properly, from a mobile first perspective.</p>
+<p>Unfortunately, there are also a lot of designers that just don't care. Partially because some consider it a developer only issue. Clearly it isn't if it and design are so closely tied together. Don't believe me? I'd suggest reading Brad Frost's take on it in his article <a href="http://bradfrostweb.com/blog/post/development-is-design/"><em>Development is Design</em></a>.</p>
+<h2>Price</h2>
+<p>This is a big &quot;it depends.&quot; Mainly because this changes depending on who is building the site. Will it take longer to develop and plan? Will that incur larger cost versus a fixed width site? Likely, depending on the company. But consider the investment through the life of the site. If we're talking real long term cost, it is probably worth the short term hit.</p>
+<p>By making a responsive site from the beginning, you future proof your site. You also make it as efficient as possible for all types of users and devices (assuming you're using your tools to do so, and you should be). By doing those things, and incremental updates, you could possibly save yourself from having to do an overhaul as soon as you would have if you hadn't gone responsive. Also, desktop usage is going down. Mobile (and others) are going up. What will be the cost when you decide you do need that overhaul?</p>
+<p>In my opinion, those benefits are worth it in the long run. In addition, I also believe that most companies shouldn't be charging extra for responsive. We should be designing responsive by default, simply because it is best practice to do so in order to make a more lasting site. Mobile first techniques are also good for getting everything on a site down to what needs to be there. Focus helps.</p>
+<h2>Conclusion</h2>
+<p>As always, of course, it all depends. There may be a client who just can't wait or put in the effort for a responsive design. Maybe they don't have the budget (again, I don't personally believe in charging extra for it). Maybe its something unforeseen.</p>
+<p>Like many comments on his article, I didn't fully agree with the author. Though I do think he made some good points in a couple of spots, his supporting arguments for some of them are flawed. But, it is just my opinion (for the most part). If we continue to take on a mobile first approach and don't penalize our clients with extra costs on what is a best practice, you've pretty much gotten past your dilemma on the matter. Certainly as more of us get used to designing and building these sites, our technique and skills will improve to meet the challenges and problems we currently face with responsive.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>iObession</title>
+      <link href="https://jmcdsn.com//my-thoughts/iobession/"/>
+      <updated>2013-11-17T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/iobession/</id>
+      <content type="html">
+        <![CDATA[
+      <p>Just a friendly reminder in this post: when you're doing responsive design, you need to think about all devices, not just the ones that you immediately use or the ones that you think are most popular (especially without actual data). In particular, this one goes out to all my design comrades in the business. Don't get too obsessed with making a perfect experience for your Apple devices that you're so fond of.</p>
+<p>Designers have had a long history with Apple and their products, since the Apple 2 in the 80's. Most designers still use and prefer their Apple devices to work on. Many learn their trade on Apple computers. Unfortunately, designers of all kinds are only human. We tend to think about our own little bubble and believe that many people also occupy the same space and therefore, make our experiences accordingly. However, in this time of rapidly evolving design techniques and the plethora of devices that can (and will) access the web, it is a foolish thing to do.</p>
+<h2>Think Outside of the iBox</h2>
+<p>I'd refer to the term of the &quot;zombie apocalypse of devices&quot; that are on the way. Connected devices of all sorts are coming. Watches, phones, fridges, cars, glasses, televisions, game systems, washing machines... and those are just the ones off the top of my head.</p>
+<p>If the point of responsive design is to make an experience for as many devices as possible, and to future proof your site to them as best as possible, then iOS devices are a very small piece of that experience. That percentage may also be getting smaller as new devices come out. Not to mention, Apple's lines are evolving all the time as well. What happens when you made a special experience for iOS devices only to have that experience break on new Apple devices? While Apple does take some care for developers in this regard, it isn't a guarantee they always will.</p>
+<p>I also mentioned in a previous post another reason to not specialize for particular devices in responsive design. Users can and do take notice of differences in experience between device types. If I'm on a device other than iOS and someone else who is on iOS gets something special or an interface that works better than the one I'm served, as a user I am immediately turned off by your site. You've shown a preference towards a particular audience that isn't me. In the case of a business, I may decide to just take mine elsewhere. Are you willing to alienate certain user bases because of their choice in device? That attitude reminds me of the &quot;You need Internet Explorer to view this page&quot; days. I would hope we're beyond that.</p>
+<p>You should also be asking that if a design decision is better for iOS, why just give it to those devices? Maybe it is worth considering putting it across all platforms as well.</p>
+<p>By specializing for particular device types, you're also making more work for yourself for those specific devices. Why not just give everyone who met certain criteria the better design solution using progressive enhancement?</p>
+<h2>Conclusion</h2>
+<p>As designers we need to make sure we consider all the angles when building a site. If we're building for the future, then we need to show it. While iOS and Apple are undoubtedly part of that future, it isn't the only player in the game. This post is mostly about us paying to much attention to iOS and Apple products, but it really goes for any device type. Don't fall into the trap of thinking everyone or most people are using the same thing and specializing for it. It has chance of biting you later on.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>Review: Chromecast</title>
+      <link href="https://jmcdsn.com//my-thoughts/review-chromecast/"/>
+      <updated>2014-01-23T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/review-chromecast/</id>
+      <content type="html">
+        <![CDATA[
+      <p><img src="images/chromecast_front.jpg" alt="Chromecast"></p>
+<p>I was lucky enough for my birthday this year to receive a brand new Chromecast from a friend. I had been wanting once since they were announced, and after seeing the price tag ($35) I wanted one even more. So what are my impressions from about 2 months worth of time with it? Read on for my thoughts below.</p>
+<h2>Initial Impressions</h2>
+<p>The Chromecast comes in a small package with everything you need. There's the device itself, as well as the usual manual a USB cable, and a power adapter. The packaging is pretty slick. Very clean and Apple like, though it's about what I'd expect from a company like Google. One of the things that stuck me first was just how small the Chromecast was. It's not much bigger than a typical USB flash drive. Of course, you could almost confuse it for one since there is only 1 obvious port that looks very USB-like, the HDMI port. On the opposite end of the device is the USB port.</p>
+<p><img src="images/chromecast_packaging.jpg" alt="Chromecast Packaging"></p>
+<h2>Installation</h2>
+<p>Installation of the Chromecast was fairly straight forward, but I did run into a few surprising challenges. It should be as simple as the packaging stated: Plugin, switch to input, set up with an App or Chrome extension. For me most of this went well and as expected. Getting the app for my various Android devices was no issue at all, same with the extension for the Chrome web browser. The problem for me was getting my equipment to get a display out of the thing.</p>
+<p>Initially, I figured two things:</p>
+<ul>
+<li>I could just plug it into my home theater receiver and it would display just the same</li>
+<li>I could use a spare USB port for power</li>
+</ul>
+<p>At first, I set it up like that. After quite a few minutes between a friend and I of tinkering, we still had not gotten a signal from the input. We tried switching the input, not using USB power, a reset of the receiver, nothing seemed to do it. I'm not sure what finally changed the Chromecast's mind, but when we plugged it directly into an HDMI port and USB port on my LG television, it sprang to life... after some more unplugging and re-plugging in.</p>
+<p><img src="images/chromecast_port.jpg" alt="Chromcast USB port"></p>
+<h2>Set Up</h2>
+<p>After this initial headache, set up was very easy. Almost too easy. Follow the on screen instructions to link up your device to the Chromecast, and give the Chromecast the credentials to your network via the extension / app. I did the whole thing via my Android tablet and we were up and ready to go within just a few minutes. After getting it to work, it had no complaints moving back to my receiver with a USB power source. An odd hiccup, but easily remedied.</p>
+<p>I thought at first that there would be more to actually, you know... set up. Maybe configure all sorts of options and things of the Chromecast. Unfortunately (or fortunately, depending on your viewpoint) there really isn't a lot to configure besides network settings and a few odds and ends. There isn't anything substantial, and I'm hoping more advanced settings are added (which I'll go over later).</p>
+<h2>Casting</h2>
+<p>What surprised me about the Chromecast was that it has no apps. What I mean by that is you don't install apps on the Chromecast, which is what I expected. Instead, you use Android apps that are compatible (or Chrome on your computer) to send a signal to it. So, many of the apps you'll probably want to use with the Chromecast, you may already have. Open a compatible app and a cast icon is available. Tap the cast button and your content shoots over to the screen. It really is as simple as that.</p>
+<p>Our TV is a newer one, and it came with YouTube, Netflix, and Plex pre-installed as apps. All of those apps are available for Android and compatible with the Chromecast. While my TV's interface for Netflix and Plex hasn't really ever bothered me, they've always been a little sluggish. The YouTube app on it is pretty much unusable. Its cumbersome and terribly slow.</p>
+<p>Being that the TV is so bad with YouTube, playing those videos via Chromecast is much easier. I usually find the video I want on my tablet, tap the cast button, and after buffering its playing on the TV. No headache, no slow interface. The nicest part is being able to search and queue up more videos for casting while you wait. Obviously this has made YouTube parties at my place super easy. Pretty much pass around the tablet and watch.</p>
+<p>All of the other apps are just as simple to use, but don't have the same intuitive feature as the queue. For instance, the Google Music app doesn't seem to be friendly to that very same idea of queuing. Maybe I missed something. I hope I did, because being able to DJ via your phone or tablet is always a nice ability for parties, but not when you're always looking at it. The app I was really hoping to test, Plex, currently only offers casting to MyPlex subscribers. Fortunately, the feature is eventually slated to come to non-subscribers, at which point I'll probably use the app on my tablet more than on my TV as with YouTube.</p>
+<h2>Umm... apps please?</h2>
+<p>Unfortunately, this brings me to the biggest downside of the Chromecast right now. There aren't really any apps. I mentioned Netflix, Plex, Google Music, and YouTube. In addition, there are about 10 others. Yes, the current crop of apps for Chromecast stands at less than two dozen. This is mainly due to the fact that Google hasn't really opened up the SDK for the Chromecast yet, so only a handful of developers have the ability to add the capability to their apps at the moment. Google is supposedly releasing said SDK later this year. At that point, we'll probably see many more apps for Chromecast pop up. Music, video, and movie / tv apps are obvious, but it's possible that later we may get games (use the device as a controller while the actual game world is on screen? Hey, its an idea!)</p>
+<h2>Final Thoughts</h2>
+<p>Outside of the current apps, there really isn't anything to do with it. If you have a smart TV with a decent interface, you may not even use it. Before my (accidental) YouTube party, I actually hadn't used it since Christmas (where it played <a href="https://www.youtube.com/watch?v=Fo1YG_kdpxQ">The Nerdist Yule Log</a> on repeat for a party). Fortunately for Google, no TV manufacturer has really been able to nail down a great and responsive UI for their apps (at least not that I've seen). So, if you really hate bad interfaces, it may be worth it. Pair it with your iOS or Android device and get the benefit of using an interface you already know that probably works much better. A scenario that is <em>really</em> worth it though, is if you have a &quot;dumb&quot; TV but one that still is up to date enough to have HDMI. Essentially, you can upgrade your TV to now have apps very easily. However, there are similar products that are around the same price that have been out (Roku, anyone?) that already have a more robust library of apps and community built around them.</p>
+<p>Hopefully later this year, the release of the developer tools will cause many more apps to show up. The usual stuff like MLBTV, Vimeo, Spotify, etc. will probably show up very quickly. I'm also interested on the possibilities of what the average developer can do, but that's a ways off. For now, I'll probably continue to use it only once and awhile. Hopefully before my next impromptu YouTube party.</p>
+<h3>UPDATE 2/3/2014</h3>
+<p>So, the SDK was recently opened up! We'll see how many developers start working on app compatibility for the Chromecast now.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>Just an Update</title>
+      <link href="https://jmcdsn.com//my-thoughts/just-update/"/>
+      <updated>2014-04-05T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/just-update/</id>
+      <content type="html">
+        <![CDATA[
+      <p>It's been awhile since I posted last, so I figured a quick catch up was in order of things I'm thinking about or interested in. I may write more about these topics in the future, but for now, I think a quick couple paragraphs for each will do.</p>
+<h2>AngularJS</h2>
+<p>So a friend of mine has been bugging me just about every time I meet him. What does he bug me about? Well, since we work in different fields but similar disciplines, he bugs me about what his boss is bugging him about: <a href="http://angularjs.org/" title="Angular JS">Angular</a>. He's wondering if it would be a good solution for them to use internally for tracking tools. I hated telling him that I didn't know anything about Angular. Of course, I felt really silly after it happened a couple times after not seeing him for awhile. Ok, time to buckle down and see what this was all about.</p>
+<p>Well, I did. I gotta say just after looking at the basic abilities of it, Angular has me <em>really</em> excited. Obviously it is completely ready for production use right now, just not by me. After learning a bit about it, going through some tutorials and sandboxing some ideas, I have been able to get a grasp of some of it. Unfortunately, not enough to make me feel comfortable to work with it on a real project.</p>
+<p>I've already seen a few nice spots for use cases of it at my current job, but it doesn't have enough traction to make people want to really risk taking the time to learn and use it. What does that mean? I'll have to do that on my own time. But that's okay. It fits in with something else I've had on my mind...</p>
+<h2>App Itch</h2>
+<p>Lately, I've really had this feeling that I should try to expand my design skills in the application department. While there are loads of web projects I could re-imagine, lately what's really getting me excited is interaction. The place where interaction design seems most prominent is in application design UI. I recently stumbled upon this site, <a href="http://useyourinterface.com/" title="Use Your Interface">Use Your Interface</a>, which has some great animated gifs of simple interactions. I've also seen some really inspiring designs lately on Behance that make me want to just give it a whirl.</p>
+<p>What would I do for my first app? I'm thinking of something I can use personally and get some solid opinion on with my nerd friends. Obviously this would be a great way to also dive into using Angular on a real project. I've already got some specs for the app in my head, hopefully I can design it soon.</p>
+<h2>Redesigns</h2>
+<p>While I feel it may be a bit too early for a redesign of this site, I really want to do some redesigning of other sites. So I may do some redesign concepts soon, just because. I think part of the reason I've had this feeling and the app one lately is because work lately has left me pretty stagnant with the same client for awhile, so I need to &quot;feed the beast&quot; as it were.</p>
+<p>One I'm personally thinking of doing would be <a href="http://thetvdb.com/" title="The TVdb">thetvdb.org</a>. While it's not a very popular site (like IMdb), it has a lot of the same assets and ideas behind it, so it could be a fun one to think about. I think I'd like to stick to some lesser known sites, just because everyone does Facebook or Twitter (at least it seems like it).</p>
+<h2>I Love SVG</h2>
+<p>Lately, I've been seeing a lot of love for SVG. In my opinion, it is totally deserved. The more I learn about SVG, the more I'm just into it. Between <a href="http://snapsvg.io/" title="Snap SVG">Snap</a>, some neat tricks lately on CSS-Tricks (<a href="http://css-tricks.com/svg-wordpress-custom-fields/">custom SVG and Wordpress</a>, <a href="http://css-tricks.com/svg-sprites-use-better-icon-fonts/">Icon Systems</a>) and learning about <a href="https://useiconic.com/">Iconic</a>, SVG is just blowing my mind lately.</p>
+<p>What's weird is SVG has been around, but we haven't been able to reliably use it between the major players in the browser world. Now that IE is getting to a point where version 8 is really the only issue (if you even support it), SVG as a solution to vector graphics is finally a viable alternative. With tie-ins with CSS, animation, and other tricks, I'm really excited to see what people think up of with it. I'm also thinking more about what I can do with it.</p>
+<p>With CSS support (in the right circumstances) and automatic high DPI support, I really don't see why you wouldn't use it. Tied with Modernizr, IE8 may not even be that big of an issue for most people. Time will tell, but I think the future is finally bright for SVG.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>Meanwhile...</title>
+      <link href="https://jmcdsn.com//my-thoughts/meanwhile/"/>
+      <updated>2017-04-06T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/meanwhile/</id>
+      <content type="html">
+        <![CDATA[
+      <p>So, more and more I'm finally getting my itch back to start actually using this so called &quot;blog&quot; of mine and post something. Well, things will be coming in the future. However, there are some changes that have happened recently to the site that I think were worth talking about. By &quot;recent&quot; I also mean the last few months... not the last few years.</p>
+<h2>New digs</h2>
+<p>Still running the same WordPress install as ever. Still running the same plugins and custom theme. While I continue to (slowly) build an updated theme with all the bells and whistles, I did realize a couple things. The first being that, I have two domains and I had planned to switch to the shorter one at some point. The second being that, my site's hosting was slow, expensive (for shared hosting), and didn't allow me to do things I wanted to do (like SSL). So, I moved. New, cheaper, and dedicated (gasp!) hosting. My old hosting provider didn't seem very happy to lose my business. I didn't really have the heart to tell them that while I liked their mission of &quot;green&quot; hosting, not having the highest quality and jumping through hoops to get HTTPS support is not cool either. Especially when I can get the job done for less without being on a shared server.</p>
+<h2>Let's Encrypt this thing</h2>
+<p>This was by far the best surprise of my move. I immediately wanted to get HTTPS working as soon as I started the migration to my new host. It basically became a main objective. I don't exactly have a lot of money and I want to do my part to make the internet a more secure place. So I figure I'll do the <a href="https://letsencrypt.org/">Let's Encrypt</a> thing. Honestly, I didn't think it would be <em>that</em> easy. After moving the site and 15 minutes of using their tool through my server, I'm using HTTPS. I even got WordPress set up to automatically use it in all cases without hardly any extra effort. Honestly, a few of those minutes were me figuring out how to <em>properly</em> make a certificate, so chalk a bit of time to being a newb. I was so excited, I tweeted about it.</p>
+<p>https://twitter.com/jonmchristensen/status/829532757088993280</p>
+<p>And that tweet is <em>still</em> getting likes. I guess people must really like encryption as part of their online browsing. Given the current state of affairs recently with the <a href="https://arstechnica.com/tech-policy/2017/04/trumps-signature-makes-it-official-isp-privacy-rules-are-dead/">USA removing ISP privacy laws</a> that were to go into effect later this year, can't say I blame them. I'm certainly considering what the options are for my clients now, as honestly I'd like to be able to tell everyone to get on the HTTPS train.</p>
+<h2>Warp speed</h2>
+<p>Moving to SSL and a new host has also allowed me to get <a href="https://en.wikipedia.org/wiki/HTTP/2">HTTP/2</a> up and running on the site. This is more a move for the future and the new theme, which might be able to take advantage of the improvements better. Still, it feels good to be serving the site as fast as possible. I am planning on doing some major AJAX stuff at some point in the newer theme, so I think this'll lend a hand when that day comes. In the meantime, it is still a bonus, even though the site isn't particularly heavy.</p>
+<h2>The future</h2>
+<p>As I've said, the new theme is on the way. It can be hard to find the time to build said theme though. I also realized not long after I started diving in, that I really need to get all my content lined up, since I really want to hit that out of the park. The current site has always felt... slim. Great for performance, not so much for content. These are great steps to start in the right direction of that eventual big change. I'm going to (try) to write more as well. I realized, there is actually a lot lately happening in the industry and in tech policy that I do have something to say. I was <a href="https://adactio.com/journal/12059">recently reminded that I should write</a> this stuff anyways, even if I don't think people are reading it.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>On Container Queries</title>
+      <link href="https://jmcdsn.com//my-thoughts/on-container-queries/"/>
+      <updated>2017-05-05T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/on-container-queries/</id>
+      <content type="html">
+        <![CDATA[
+      <p>So, lately I had read quite a bit about container queries (or sometimes I see them called &quot;element queries&quot;). Within the span of a couple weeks, there were posts on <a href="https://css-tricks.com/container-query-discussion/">CSS-Tricks</a>, on <a href="https://ethanmarcotte.com/wrote/on-container-queries/">Ethan Marcotte</a>'s site (which I found by way of Brad Frost's site), and a few Twitter posts (which I can't find at the moment of writing this, apologies). I had some thoughts I want to share on it. Mostly because at the time, by chance, I was actually wondering what has been going on in this space.</p>
+<h2>Way back when...</h2>
+<p>A long time ago, I <a href="https://www.smashingmagazine.com/2013/06/media-queries-are-not-the-answer-element-query-polyfill/">read this article</a> on element queries on Smashing Magazine. This was back in 2013. For me and the company I worked at during that time, responsive design still felt new enough internally they were still trying to figure out how to sell it. It was still flashy enough and new enough that we could still wow clients demoing it. After reading that article, a few things popped into my head. The main one: this guy is nuts. Media queries are awesome! They do everything we want. Clearly he isn't using them right. He isn't organizing his CSS right. Various other thoughts along those lines. I really didn't see the need beyond media queries at the time. A lot of the ideas in this article though were a precursor to what we see now in the work on container queries.</p>
+<h2>Present day...</h2>
+<p>So... yea, things have progressed since then. Clients <em>expect</em> responsive design now. It doesn't wow them anymore, its the norm. Media queries are part of the normal workflow now. It is something that designers are finally thinking of and planning for at the beginning. Just about each component I make has some sort of media query styling to it in one way or another. I'm sure most developers are in a similar spot.</p>
+<p>Modular architecture is the name of the game. Recently, we've gotten some help making some of these modular components. The addition, and wide support of, Flexbox has helped a lot in making layouts. I expect when I finally get to use Grid on a regular basis I'm going to fall in love with that, as it will also help out with some of the common layout issues I've had with responsive layout in the past.</p>
+<p>But we're talking about the need for container queries. So as time has gone by and I've started to work on sites that are more and more modular in their thinking, I would absolutely <em>love</em> to have container queries. Because the reality is, we need them for more than just our layout problems. I feel like the designers I've worked with since have become more aware of different sizes, different interfaces, and are embracing this modular way of thinking. But, as someone who is also a designer, there is more to this than just layout.</p>
+<p>Chris points this out in his CSS-Tricks article. I think one of the most important things that this can help solve is hierarchy. Whether that is a module's weight, its type, its color or visibility, when you're moving a modular component from one area of your site to another on the page, you can really end up messing with the hierarchy between it and other modules. Are there other ways to solve this besides container queries? Sure. But they probably aren't as clean. To me, container queries represent another tool in our CSS arsenal. I honestly think that if they were implemented, I'd still use media queries along side them. Almost like we have different nails and two hammers to choose from instead of one.</p>
+<h2>The elephant in the room</h2>
+<p>There is still a thing that bugs me about container queries that has bugged me since that old Smashing Mag article. All current uses for container queries depend on JavaScript to work. Now, I'll admit, I use polyfills all the time. People <em>really</em> want container queries though. Like, yesterday. So, they're reaching for JS to fill the gap until they drop properly in the browser. While normally I'd say &quot;that's progressive enhancement&quot;, it just doesn't feel right to me in this instance.</p>
+<p>Why? If they don't work for the user, sure they still get the content, but there could be some more serious design problems that could arise out of them not getting their queries. Aren't those problems why we're using them in the first place?</p>
+<p>Depending on JS to solve your potential layout, hierarchy, and other design issues with your module sounds... risky. Maybe that's just the designer in me. While we do have modules that would benefit from having this ability, <em>not</em> having container queries isn't exactly stopping us from providing solutions anyways with current tech without JS.</p>
+<p>This is just personal opinion, but I also don't like non-standard CSS in my styles. I've been down that road before with other fixes for Internet Explorer way back, and I don't care to do it again. I know some people would disagree with that. People use non-standard CSS all the time. In my experience, this is mostly limited to vendor prefixes. But the spec for this isn't even really close yet. Our scripts might use code that is completely different than what it will end up being. Lately I've really been focusing on staying more vanilla everywhere, and only using a polyfill if it follows the spec. In this case, I can't do either.</p>
+<h2>Patiently Waiting</h2>
+<p>I'm going to love when container queries finally drop. I think it'll be an amazing tool to have next to media queries. With all the other new CSS features on the way, media queries are going to be even more powerful, and we'll have lots of other fun stuff to play with. In the meantime, we just got Grid (mostly) and between it and Flexbox we can solve a good chunk of layout problems. As for our hierarchy problems, maybe we'll just have to deal with what we have right now. It isn't ideal, but that's why we're working on the problem. Some will choose to go ahead and JS their way out of it, and that is ok if you're comfortable with that. Personally, I'll be going about it as usual, using the current (but kinda gross in this instance) tech.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>Learning Vue</title>
+      <link href="https://jmcdsn.com//my-thoughts/learning-vue/"/>
+      <updated>2017-06-07T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/learning-vue/</id>
+      <content type="html">
+        <![CDATA[
+      <p>Recently, I had to do some thinking to figure out some goals for the year and possibly beyond. As much as I feel like I have a pretty good knowledge set under my belt, companies are always looking for more. The reason why might have to do with a lot of things. Maybe the person posting the job doesn't know any better. Maybe they genuinely want someone who is a &quot;jack of all trades&quot; type. Could be they figure the person they get better be on at least one train of the latest and greatest something. Whatever the case, I figured it was time for me to actually learn a front end framework from top to bottom.</p>
+<h2>Enter Vue</h2>
+<p>I've looked into various frameworks before. The first one I actually started with was Angular. While I did like Angular, it wasn't exactly easy to learn. At least, not how or where I learned it. Since then, Angular has changed. Oh yea, and it <a href="https://angularjs.blogspot.com/2017/03/angular-400-now-available.html">changed again</a>. Well, at least in name anyways. My personal opinion is that Google's documentation with these things is also only a little good. So that didn't help matters. The point is, I really didn't feel like Angular was the way to go.</p>
+<p>Recently though, I came upon Vue. I read <a href="https://css-tricks.com/guides/vue/">a few articles</a> on it and some basic getting started bits and found that it is just <em>so</em> much easier to get going than Angular. At least it is for me. I was up and running with it very fast. This is good, because I'm pretty sure that's what the makers of Vue were going for.</p>
+<p>I've heard similar stories from other developers in a position like myself who are just getting into frameworks that Vue is by far the most friendly to get started with as well. I've even heard tell of some developers switching from their Angular stack to a Vue one. Sweet!</p>
+<h2>Learning bit by bit</h2>
+<p>I looked around for some good places for someone to walk me though Vue. <a href="https://laracasts.com/series/learn-vue-2-step-by-step/">Laracasts' Vue courses</a> were really invaluable to me here. Jeffery really has some great topics in there (and for free!) Through watching his videos, I really got to have a nice high level vantage of Vue and get my feet wet.</p>
+<p>Of course, I'm one who learns best not just by watching videos or tutorials but also through doing in actual code by myself. It also became apparent I should try to know Vue really deeply if I wanted to leverage its full potential. To that end, I went off and <a href="https://www.udemy.com/vuejs-2-the-complete-guide">bought a course</a> over Memorial Day (some searching for recommendations had this one pretty high on the list). I've gotten though about 10% of it so far (there are over 300 lessons). I'm hoping to get through all of them in my spare time in the next month.</p>
+<h2>Looking ahead</h2>
+<p>So far, I'm <em>really</em> enjoying learning Vue. Because of Laracasts' course, I've already got an idea of what is coming in my Udemy course, but I'll know what's going on much more intimately (at least, that's the idea). There is so much potential to build some really cool stuff. Unfortunately, I'm most likely not going to get to use Vue too much where I'm at now (at least, not until I can convince some other developers to get on board). I think it'll get folded into the new version of my site though for sure. It should come in handy in the future for other projects or if demand for more app-like sites keeps going up (and I think it will). It never hurts to learn new things. I'll just have to be careful not to use it just because I can (hammers and nails and all that).</p>
+<h3>Over Reaction</h3>
+<p>Some people might be reading this and saying, &quot;Dude! Why didn't you go for React?!&quot; Well React people, fear not. Vue seems to have a very low barrier to entry compared to React. I'm using it as a stepping stone so I can better understand React when I learn it. When I bought my Vue course I also bought the top React course. So, all in good time. I plan on learning some React basics at Laracasts again before I switch over to my paid course. I'm hoping learning both will be extra beneficial.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>Customer Experience</title>
+      <link href="https://jmcdsn.com//my-thoughts/customer-experience/"/>
+      <updated>2017-07-21T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/customer-experience/</id>
+      <content type="html">
+        <![CDATA[
+      <p>Lately, both at work and in my personal life, the customer experience and how it is perceived has really been at the front of my thoughts. Just to clarify, this doesn't specifically have to do with the web. It probably is more so with customer relations, brand image, and marketing. I won't go into the current experience at work, but I would like to share the one in my personal life.</p>
+<h2>The Tale of the Man and the Car Part</h2>
+<p>Recently, my father was shopping online for some car parts. Not something I suspect he does very often. While he does do quite a bit of online shopping, I think he finds it to be a frustrating experience at times. Not because of something in the design of a site necessarily. Actually, it isn't even something while he is on the actual site. It is the experience <em>after</em> he has already ordered that is what caught my attention.</p>
+<p>When he got his part delivered, he got follow ups from the company that he ordered it from. They weren't the follow up emails that he was used to though. They wanted to be sure it was delivered alright and in good condition. Not only that, but since they manufactured the part, they also emailed extra instructions on installation and additional support information.</p>
+<p>I'm not sure if he <em>needed</em> this information, but he greatly appreciated that it was so easily made available to him. Even more appreciative that the emails didn't pressure him to buy more things, take a survey, or otherwise throw additional marketing his way. In fact, he was so happy they treated him this way, that he sent a thank you to their staff and assured them that he was now a loyal customer. That is no small thing.</p>
+<h2>So... what did we learn?</h2>
+<p>Think about it for a moment. He appreciated that the company he ordered from seemed to show genuine interest and concern for his personal experience with their product. It wasn't about trying to get him to do more things for the <em>company</em>, they were continuing to do things for the <em>customer</em>. Trying to get ahead of his possible continuing needs versus serving their own self-interest. Even after they had already had a successful transaction. It seems this company really gets it in terms of the customer experience.</p>
+<p>I feel like anyone reading this would say, &quot;Well, duh. Of course he liked that.&quot; Who wouldn't, right? Here's the thing though: I have seen way too many companies not just &quot;get it.&quot; Their product is special. Their company is special. Many times, I've heard clients say &quot;but our users will love the pop up&quot;, &quot;our customers like our daily promotional emails&quot;, or &quot;but we're the best, so we can do that&quot;. Okay, maybe not the last one exactly, but close. Usually, when you turn it around on them, &quot;Would <em>you</em> like all those things?&quot; they usually sing a different tune. Something like, &quot;Well no. I hate those. But... (insert some reason why their customers won't care in this case).&quot; Hmm.</p>
+<h2>In the end</h2>
+<p>I fear that many times, we fail our clients by not forcing them to step into their customers' shoes. To view it honestly from that viewpoint. To get treated how they would like to be treated if they were shopping or using a site or product. In the end, the sad truth for the majority of companies is this: you and your product are not special. In today's world, <a href="http://deathtobullshit.com/">people are bombarded with bullshit</a> and many are sick of putting up with it. If they can go somewhere else and get something similar without dealing with that bullshit, they will.</p>
+<p>Companies that can purge themselves of their own superiority complex and look at it from their customers' eyes will gain an advantage of something that is actually valuable beyond their services or products: that feeling of being genuine and caring about their customer. That feeling could end up making a new customer loyal for life. Conversely, abusing customer experience with ads, pop ups, marketing gimmicks, spam in their inbox, and God knows what else could end up making your customer feel like you don't actually care about them at all. Both are reputations that can spread through word of mouth for good and bad. And that kind of thing is viral.</p>
+<p>If you think about it, a company being genuine is actually self-serving, since it helps them as much as the customer. It is almost like people want to be treated like... people. Crazy, huh?</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>New year, new theme, new gig</title>
+      <link href="https://jmcdsn.com//my-thoughts/new-year-new-theme-new-gig/"/>
+      <updated>2017-12-28T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/new-year-new-theme-new-gig/</id>
+      <content type="html">
+        <![CDATA[
+      <p>It has been awhile since the last post I made. I used to have the habit down a little better, but there is a good reason I have for breaking it temporarily. August was a crazy month for a few reasons. I got to go to my first WordCamp, which was awesome. Later in the month though, the agency I worked at was purchased by another agency in the area. They interviewed all the old staff. Only some of us made it over there. I was not one of them. So, the great job hunt began...</p>
+<h2>Hunting</h2>
+<p>Job hunting is hardly ever fun. Though, I had been feeling pretty stressed recently at my job, so my family and I looked at it as a mixed blessing. Sure I wasn't employed. However, I was able to take an extended mental break and re-evaluate what I wanted in a job. This is actually something that had already been partially on my mind during my last month or so as well, so I actually felt somewhat prepared to move on to the next phase. I tried numerous places around the Twin Cities, but without too much success. A few interviews and follow-up conversations, but nothing that stuck.</p>
+<p>I wanted to stay in WordPress development, so I looked at a few specific spots. I had remembered a talk at the WordCamp that I had attended by 10up's Pete Nelson about the REST API, and that at the end of his show it said they were looking for good people to join the team. So after looking up the company and doing some research, I figured I would throw my name at them. Here we are a few months later, and I'm part of the team. Hopefully someday I'll be able to give back and do a talk of my own that will inspire someone else to join up. For now though, it has been a great few months getting to know the team and working on projects with such a talented and professional group.</p>
+<h2>Oh yeah, new theme</h2>
+<p>You may have noticed a slight change if you visit the site. We're in new theme territory now. There is a lot of boring behind the scenes stuff going on like: fully responsive styles, runs build tasks with Gulp (may move to Webpack sometime soon, we'll see), uses semantic versioning, Git for deployment and version control... yea, lots of new technical stuff. How did I do things the old way? No idea now. OK, I do <em>know</em>, the point is it wasn't as nice.</p>
+<p>I think it fits my sensibilities a lot better than the old one, and should allow for flexible expansion in the future. There is still some polish work that should be done. For now, it is doing its job just fine. I plan on making those improvements in my spare time.</p>
+<h2>Looking ahead</h2>
+<p>Right now, I think 2018 is looking good. There are lots of things to be thankful for and excited about. There are new projects to build and things to learn. Hopefully this new theme and new path I've taken will both last a long time. I'm going to try to get back on regularly writing here, hopefully sharing some interesting insights and opinions in the new year.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>Is Chrome the new IE?</title>
+      <link href="https://jmcdsn.com//my-thoughts/is-chrome-the-new-ie/"/>
+      <updated>2018-02-13T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/is-chrome-the-new-ie/</id>
+      <content type="html">
+        <![CDATA[
+      <p>This is something that I've been thinking about the past couple months. It is something I've seen discussed a few times in different places like <a href="https://css-tricks.com/chrome-not-standard/">this mention on CSS-Tricks</a> or <a href="https://www.theverge.com/2018/1/4/16805216/google-chrome-only-sites-internet-explorer-6-web-standards">this article from the Verge</a>. It is a worrying topic for more than one reason, but the developer community (and even some outside of it) are worried about Chrome and it's current dominance of the browser landscape.</p>
+<p>So let me start off by saying the near obligatory line that I also seem to see everywhere this is talked about: I like the Chrome browser. It's my daily driver. I use it for work and personal browsing. It has great debug tools and loads of extensions. It syncs all my stuff. I can use multiple user accounts on it. Seriously, I <em>do</em> like Chrome a lot.</p>
+<p>But…</p>
+<p>Maybe that <em>isn't</em> such a good thing these days.</p>
+<h2>Back in my day</h2>
+<p>I feel silly just writing that heading, but I've been working in the industry for awhile now. Certainly not as long as some, but long enough to remember having to support IE7. Thankfully, I missed the IE6 support boat by just a hair. That doesn't mean I didn't ever have to mess with it, but I was mostly spared. However, I think most developers these days also look back at IE7 with almost the same level of distain.</p>
+<p>Why did developers not like these browsers anyways? Simply put, they sucked just weren't good. Not one bit. They were slow. It didn't conform to standards. Lack of updates meant they were way behind standards. You needed all sorts of hack foo to get things working just right.</p>
+<p>The worst part though? You were stuck with them. Seriously. Everybody's analytics were all up in that gross Internet Explorer pie. You were also just about guaranteed that if someone had a Windows computer, they were <em>probably</em> using IE. Most just didn't know any better. Sure we had Firefox, but man, it was (and I'd argue still is) the black sheep of the browser world. Hence why many sites were &quot;Built for Internet Explorer&quot; or similar.</p>
+<p>Then one day, the heavens parted and those at Google bestowed upon us our savior, Chrome.</p>
+<h2>And there was much rejoicing</h2>
+<p>Chrome grew in popularity with developers and non-developers. It was performant, extensible, standards compliant, and reguarly updated. Along with integration of Google's other services (mainly search), it seemed like everybody started flocking to it.</p>
+<p>With the introduction of Chrome and a big name like Google behind it, Microsoft seemed to get the message that it was stagnating and stepped up its game, lest they lose a lot of market share. Of course, it didn't really catch on to that until a lot of its users already left. Some of why they were seemingly late to the game might be attributed to Microsoft's overconfidence that their browser couldn't be touched since it was the default on most systems. The mobile revolution also contributed, and Chrome became the default browser on Android.</p>
+<p>Over the years since its introduction, Chrome has made its way on to all major platforms. It has still kept up with some of the things that made it so popular to begin with, and added on a few things since. A lot of users seem to install it almost immediately on any new device they get. But this is where our trouble unfortunately begins.</p>
+<h2>The devil in the machine</h2>
+<p>Something you may or may not know, developers love it when support for cool new features drop. Seriously, it can feel like Christmas morning for your inner nerd child. It is a gift of something you know will not only make your life easier, but make your product that much more awesome, and potentially make the experience greater for your end users. These new features usually come about as standards are made.</p>
+<p>Chrome has always been good about standards. It has also been pretty consistent at adding experimental features and standards that are still in flux. There is good and bad to this. New features help move the web as a platform forward. Helping it grow into something more useful and maybe even easier to build for at the same time. The bad thing about this is that developers can get a little too excited to use these features, leaving other browsers (and by extension users) behind before they are actually standardized. Some of those features even just get abandoned or simply languish for years.</p>
+<p>This is when I first started noticing awhile ago, there were a lot of cool &quot;demos&quot; and such being shown off with that tiny addendum &quot;Only works in Chrome&quot;. Now I think many developers would agree, this is fine so long as it isn't in production. Slowly but surely though, the various features from these demos started showing up in production sites before they had been fully standardized. But these incidents were usually the exception and the functionality was usually not something that was entirely needed. The thing that really made me want to write this is the following twitter post:</p>
+<p>https://twitter.com/slackhq/status/958645632620748800?lang=en</p>
+<p>Lately there has been a big surge of &quot;Optimized for Chrome&quot;. Mainly within Google's own properties (this is a different kind of problem). What bugs me about this is other companies (and therefore other developers) outside of Google building sites optimized for Chrome. Using features that other browsers and users can and would benefit from, but decide not to, for whatever reason.</p>
+<p>After all I've seen and read about things like using progressive enhancement and/or graceful degredation with feature testing through the years and after the issues of one browser having so much dominance in the past, it just feels wrong. It also feels like we're headed down a very negative path. One where a singular browser has the most say about how the web is created and experienced. Something that goes against the very heart of what the web is.</p>
+<h2>So, <em>is</em> Google the new IE?</h2>
+<p>In many ways, it <em>could</em> be. Even though Google is constantly pushing the web versus IE's old track record of not moving it hardly at all, I'd agrue that a browser with tons of market dominance in either direction is bad. Competition, like in many other areas of society, can be a very good thing.</p>
+<p>Upon further reflection, is it really the browser that is at fault here, or the people building solely for it? Developers who have been around long enough already know and lived the mess that was here before with old IE. They don't want to go back to it. So they likely advocate and build for the <em>web</em> and not for a singular browser.</p>
+<p>All I can do is look at the other developers building for a <em>browser</em> and emplore them to open up another. I mentioned earlier that I use Chrome at work, but I actually do most of my development work in Firefox. Maybe we just need to all be more aware of our <a href="https://css-tricks.com/chrome-bias-finding-things-like-firefox/">Chrome Bias</a>. As developers, we're responsible. The only way all the bad things that <em>could</em> happen don't happen, is if we embrace <a href="https://medium.com/@monteiro/what-is-a-designer-94ac32ff92d0">our roles as gatekeepers</a> and do what we can do prevent it. That means continuing to build for the open web and advising our clients to support it as well. The consquences could be disasterous if we don't do our jobs, but there is still time and plenty of opportunity to make sure it doesn't happen.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>The Chromium Shift</title>
+      <link href="https://jmcdsn.com//my-thoughts/the-chromium-shift/"/>
+      <updated>2019-02-09T00:00:00-00:00</updated>
+      <id>https://jmcdsn.com//my-thoughts/the-chromium-shift/</id>
+      <content type="html">
+        <![CDATA[
+      <p>Late last year, <a href="https://www.windowscentral.com/microsoft-building-chromium-powered-web-browser-windows-10">Microsoft announced plans</a> to ditch the engine powering the Edge browser that comes with Windows and move to the open source Chromium browser project. A couple of months have passed, and I think I'm finally ready to talk about it some now that it has had some chance to settle in my mind and to absorb the thoughts of other developers.</p>
+<h2>Microsoft's Choice</h2>
+<p>So, we'll get right down to it. Microsoft appears to be wanting to switch to Chromium for a few reasons, but one of the main draws may be the open source nature of the project. Creating, using, and maintaining your own engine and keeping up with the ever expanding and updating standards of the web is no easy task. In short, it'll allow them to better compete and stay relevant.</p>
+<p>Microsoft has done their own browser and engine before, but they have never faced competition in the browser space like they do now. Edge was billed as a fresh start when it was introduced. A break from the bad reputation of Internet Explorer. It was going to be updated regularly. It was going to be fast and focus on being standards compliant. All the things Internet Explorer wasn't. I'm sure internally, Microsoft hoped the advantages of Edge over Internet Explorer plus the fact it came installed with Windows would give it the leg up over the likes of Chrome and Firefox (okay, maybe mainly <em>just</em> Chrome). It didn't. The shadow of Internet Explorer continues to loom large on the legacy of Microsoft. Many users found a friend in Chrome from the dark days of Internet Explorer's dominance. Edge became little more than an avenue to install Chrome as quickly as possible for many.</p>
+<p>And so, fast forward a few years and Microsoft has decided to throw in the towel... sort of. The switch to Chromium is a good move for them. Besides already being speedy and regularly updated by a community of developers and companies (including Google and Apple), they'll be easily able to get in on newer features that only Chrome supported, use extensions, and be back as a viable choice on other operating systems (<a href="https://www.theverge.com/2018/12/6/18128648/microsoft-edge-chrome-chromium-browser-changes">MacOS Edge is already planned</a> to be a thing). All of this should allow Microsoft to devote resources to promoting, making more unique features for its browser, and hopefully get more market share, all without having to worry as much about keeping up with its competitors on some baseline concerns.</p>
+<h2>Everybody wins?</h2>
+<p>So, this is good right? Microsoft can be competitive again without devoting so much energy maintaining their own base. We get a better browser as another choice and the world moves on. Roll credits.</p>
+<p>Well, I'm not so sure about that. We get a new <em>browser</em> but its using the same <em>engine</em> as many others. That is the problem here that we should be concerned about.</p>
+<p>Believe it or not, a good chunk of browsers will now be running on Chromium as a base. Not all of them, but Chromium definitely has the market share advantage here.</p>
+<p>In addition, Google has a pretty heavily invested interest in Chromium via Chrome and is the primary maintainer of it. Google has previously drawn criticism for how closely tied it is to the project, even though it is open source. Google has a lot of pull in the project, even though multiple entities work on it. To put it mildly, Google (and by extension Chromium) <a href="https://jmcdsn.com/my-thoughts/is-chrome-the-new-ie/">doesn't always make the best decisions</a> in the interests of users (somewhat against the nature of a true open source project, in my opinion). The majority of browsers, the very way people access the internet, all mainly running on a single project whose main contributor and stakeholder may not have the public's best interest at heart is troubling.</p>
+<p>With Edge's switch over, the only real alternative that isn't Chromium based is Firefox. The whole situation reminds me very much of the browser wars between Internet Explorer and Netscape. Except instead of two browsers, we have two engines. The stakes feel much higher somehow.</p>
+<h2>Community Reactions</h2>
+<p>From what I've seen and read in the community of the past few months, it seems mixed. <a href="https://css-tricks.com/browser-diversity-commentary-regarding-the-edge-news/">CSS-Tricks</a> has a great round up of some big names, most of which I align with. A lot of prominent voices are afraid of what this may mean in the long term for the industry and users. There are some select quotes at the end of this article. I've also heard other developers rejoicing, mainly due to the fact that they expect their work will be simpler. Less engines means less likely chance of differences between browsers, making checking them faster along with actual development times.</p>
+<h2>Closing Thoughts</h2>
+<p>I'll be honest here, for all the crap Edge got being the child of Internet Explorer, it actually hasn't been that bad. In fact, some of it has been, dare I say... pleasant. Honestly, I don't recall any time where I had as terrible of a development experience as I did Internet Explorer. It certainly wasn't the worst thing out there.</p>
+<p>Edge will live on in its current form for now and in a few months, come out reborn. Will it ultimately help Microsoft? It all depends on what they do to make it stand apart, I suppose. They could make some waves if they play their hand right. Certainly their business reasoning seems sound enough to help them in that regard.</p>
+<p>But will it help people? The everyday users? That, I think, feels a little more dire to me at this juncture. I use Chrome everyday, but more and more I find myself thinking that maybe it is time for a change. I'll end with a few quotes that I think sum up all these feelings quite well:</p>
+<blockquote>
+<p>By adopting Chromium, Microsoft hands over control of even more of online life to Google.</p>
+<p>Chris Beard, <a href="https://blog.mozilla.org/blog/2018/12/06/goodbye-edge/">Goodbye EdgeHTML</a></p>
+</blockquote>
+<blockquote>
+<p>Firefox. That browser was originally created to combat the seemingly unstoppable monopolistic power of Internet Explorer. Now that Microsoft are no longer in the rendering engine game, Firefox is once again the only thing standing in the way of a complete monopoly.</p>
+<p>Jeremy Keith, <a href="https://adactio.com/journal/14608">Browsers</a></p>
+</blockquote>
+<blockquote>
+<p>When one company decides which ideas are worth supporting and which aren’t, which access problems matter and which don’t, it stifles innovation, crushes competition, and opens the door to excluding people from digital experiences.</p>
+<p>Jeffrey Zeldman, <a href="https://www.zeldman.com/2018/12/07/browser-diversity-starts-with-us/">Browser Diversity Starts With Us</a></p>
+</blockquote>
+
+    ]]>
+      </content>
+    </entry>
+  
+</feed>
