@@ -1,6 +1,8 @@
 ---
 title: "On Container Queries"
 date: "2017-05-05"
+categories:
+  - Web Design & Development
 ---
 
 So, lately I had read quite a bit about container queries (or sometimes I see them called "element queries"). Within the span of a couple weeks, there were posts on [CSS-Tricks](https://css-tricks.com/container-query-discussion/), on [Ethan Marcotte](https://ethanmarcotte.com/wrote/on-container-queries/)'s site (which I found by way of Brad Frost's site), and a few Twitter posts (which I can't find at the moment of writing this, apologies). I had some thoughts I want to share on it. Mostly because at the time, by chance, I was actually wondering what has been going on in this space.

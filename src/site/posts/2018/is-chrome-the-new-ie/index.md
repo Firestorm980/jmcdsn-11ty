@@ -1,6 +1,8 @@
 ---
 title: "Is Chrome the new IE?"
 date: "2018-02-13"
+categories:
+  - Web Design & Development
 ---
 
 This is something that I've been thinking about the past couple months. It is something I've seen discussed a few times in different places like [this mention on CSS-Tricks](https://css-tricks.com/chrome-not-standard/) or [this article from the Verge](https://www.theverge.com/2018/1/4/16805216/google-chrome-only-sites-internet-explorer-6-web-standards). It is a worrying topic for more than one reason, but the developer community (and even some outside of it) are worried about Chrome and it's current dominance of the browser landscape.

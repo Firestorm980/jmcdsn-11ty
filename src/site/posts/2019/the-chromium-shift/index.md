@@ -1,6 +1,8 @@
 ---
 title: "The Chromium Shift"
 date: "2019-02-09"
+categories:
+  - Web Design & Development
 ---
 
 Late last year, [Microsoft announced plans](https://www.windowscentral.com/microsoft-building-chromium-powered-web-browser-windows-10) to ditch the engine powering the Edge browser that comes with Windows and move to the open source Chromium browser project. A couple of months have passed, and I think I'm finally ready to talk about it some now that it has had some chance to settle in my mind and to absorb the thoughts of other developers.
@@ -38,13 +40,13 @@ Edge will live on in its current form for now and in a few months, come out rebo
 But will it help people? The everyday users? That, I think, feels a little more dire to me at this juncture. I use Chrome everyday, but more and more I find myself thinking that maybe it is time for a change. I'll end with a few quotes that I think sum up all these feelings quite well:
 
 > By adopting Chromium, Microsoft hands over control of even more of online life to Google.
-> 
+>
 > Chris Beard, [Goodbye EdgeHTML](https://blog.mozilla.org/blog/2018/12/06/goodbye-edge/)
 
 > Firefox. That browser was originally created to combat the seemingly unstoppable monopolistic power of Internet Explorer. Now that Microsoft are no longer in the rendering engine game, Firefox is once again the only thing standing in the way of a complete monopoly.
-> 
+>
 > Jeremy Keith, [Browsers](https://adactio.com/journal/14608)
 
 > When one company decides which ideas are worth supporting and which aren’t, which access problems matter and which don’t, it stifles innovation, crushes competition, and opens the door to excluding people from digital experiences.
-> 
+>
 > Jeffrey Zeldman, [Browser Diversity Starts With Us](https://www.zeldman.com/2018/12/07/browser-diversity-starts-with-us/)

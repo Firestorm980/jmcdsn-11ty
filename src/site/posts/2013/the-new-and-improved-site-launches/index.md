@@ -1,6 +1,8 @@
 ---
 title: "The New and Improved Site Launches!"
 date: "2013-03-12"
+categories:
+  - JMCDSN Site News
 ---
 
 Hello everyone and welcome to the _new_ site!

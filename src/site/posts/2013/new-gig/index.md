@@ -1,6 +1,8 @@
 ---
 title: "New Gig!"
 date: "2013-06-03"
+categories:
+  - Personal
 ---
 
 It's been awhile since I posted my thoughts, but that's because I've been in the midst of a job hunt. Thankfully, it has been successful and I'm going to be moving on soon! Reasons being outlined below:

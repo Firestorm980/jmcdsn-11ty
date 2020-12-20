@@ -1,6 +1,8 @@
 ---
 title: "Design != Art"
 date: "2013-05-17"
+categories:
+  - Web Design & Development
 ---
 
 Recently, I was reading my Feedly when I came around to a story entitled "Dealing With Overly Opinionated Clients" published [here](http://speckyboy.com/2013/05/15/dealing-with-overly-opinionated-clients/) on Speckyboy.com. While the article itself is quite good and worth the read, there was a particular bit that stuck out more in particular.

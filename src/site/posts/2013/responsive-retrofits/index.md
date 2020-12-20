@@ -1,6 +1,8 @@
 ---
 title: "Responsive Retrofits"
 date: "2013-04-13"
+categories:
+  - Web Design & Development
 ---
 
 I want to talk about something I've been seeing around a lot lately. A phrase that makes my skin crawl a bit when I hear it. _Responsive retrofitting_. I'll tell you why...

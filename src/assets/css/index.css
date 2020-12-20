@@ -48,3 +48,10 @@
 		width: 1em;
 	}
 }
+
+/* Custom utils */
+@layer utilities {
+	.max-w-content {
+		max-width: 80ch;
+	}
+}

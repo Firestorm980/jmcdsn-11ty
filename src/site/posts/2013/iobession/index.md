@@ -1,6 +1,8 @@
 ---
 title: "iObession"
 date: "2013-11-17"
+categories:
+  - Web Design & Development
 ---
 
 Just a friendly reminder in this post: when you're doing responsive design, you need to think about all devices, not just the ones that you immediately use or the ones that you think are most popular (especially without actual data). In particular, this one goes out to all my design comrades in the business. Don't get too obsessed with making a perfect experience for your Apple devices that you're so fond of.

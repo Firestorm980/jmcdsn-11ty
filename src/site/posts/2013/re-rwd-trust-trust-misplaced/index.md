@@ -1,6 +1,8 @@
 ---
 title: "Re: In RWD We Trust – Is this trust misplaced?"
 date: "2013-11-08"
+categories:
+  - Web Design & Development
 ---
 
 I recently read this article on Web Design Ledger entitled, _[In RWD We Trust – Is this trust misplaced?](http://webdesignledger.com/trends-2/in-rwd-we-trust-is-this-trust-misplaced)_ and, like many of the other people who have read it, I was disappointed with some of the information the article offered up.

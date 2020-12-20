@@ -1,6 +1,9 @@
 ---
 title: "Customer Experience"
 date: "2017-07-21"
+categories:
+  - Web Design & Development
+  - Personal
 ---
 
 Lately, both at work and in my personal life, the customer experience and how it is perceived has really been at the front of my thoughts. Just to clarify, this doesn't specifically have to do with the web. It probably is more so with customer relations, brand image, and marketing. I won't go into the current experience at work, but I would like to share the one in my personal life.

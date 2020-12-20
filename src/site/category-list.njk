@@ -1,0 +1,10 @@
+---
+permalink: /my-thoughts/category/
+layout: layouts/page.njk
+title: Categories
+---
+
+{% for category in collections.categoryList %}
+  {% set categoryUrl %}/my-thoughts/category/{{ category | slug }}/{% endset %}
+  <a href="{{ categoryUrl | url }}" class="post-category">{{ category }}</a>
+{% endfor %}

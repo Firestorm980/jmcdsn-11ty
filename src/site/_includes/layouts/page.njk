@@ -4,17 +4,20 @@ templateClass: tmpl-page
 bodyClass: page
 ---
 
-<div class="entry">
-    <div class="entry__header">
-        <h1 class="entry__heading">
-            <span class="entry__heading-title">{{ title }}</span>
-            {% if subheading %}
-            <span class="entry__heading-subtitle">{{ subheading }}</span>
-            {% endif %}
-        </h1>
-    </div>
-    <div class="entry__inner">
-        <div class="entry__content">
+<div class="">
+	<div class="bg-gradient-to-tr from-gray-100 dark:from-gray-900 to-transparent">
+		<header class="h-screenh-90 p-4 mx-auto flex flex-col justify-center max-w-content">
+			<h1 class="py-3">
+				<span class="pb-3 block w-full text-4xl text-gray-900 dark:text-gray-50 md:text-5xl lg:text-6xl xl:text-7xl">{{ title }}</span>
+				{% if subheading %}
+				<span class="text-4xl font-normal bg-gradient-to-r from-brand-primary via-pink-500 to-purple-600 bg-clip-text text-transparent">{{ subheading }}</span>
+				{% endif %}
+			</h1>
+		</header>
+		<span class="block h-px w-full bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-600 to-transparent"></span>
+	</div>
+    <div class="p-4 md:py-screenh-10 mx-auto max-w-content">
+        <div class="prose dark:prose-dark max-w-none">
             {{ content | safe }}
         </div>
     </div>

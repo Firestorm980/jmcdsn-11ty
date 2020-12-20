@@ -64,7 +64,6 @@ module.exports = {
         'screenw-70': '70vw',
         'screenw-80': '80vw',
         'screenw-90': '90vw',
-        'screenw-full': '100vw',
         'screenh-10': '10vh',
         'screenh-20': '20vh',
         'screenh-30': '30vh',
@@ -73,8 +72,7 @@ module.exports = {
         'screenh-60': '60vh',
         'screenh-70': '70vh',
         'screenh-80': '80vh',
-        'screenh-90': '90vh',
-        'screenh-full': '100vh'
+        'screenh-90': '90vh'
       }
     },
     fontFamily: {

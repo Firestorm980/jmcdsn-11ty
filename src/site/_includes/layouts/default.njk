@@ -18,7 +18,7 @@
   <body class="{% if bodyClass %}{{ bodyClass }}{% endif %} bg-white dark:bg-gray-800">
     {% include "components/svg.njk" %}
     {% include "header.njk" %}
-    <main>
+    <main class="z-10">
       {{ content | safe }}
     </main>
     {% include "footer.njk" %}

@@ -1,12 +1,14 @@
 ---
 title: "Re: Responsive Design Is Always Appropriate"
 date: "2013-03-31"
+categories:
+  - Web Design & Development
 ---
 
 Recently, there was an article by [Vanseo Design](http://www.vanseodesign.com) (which posts lots of great articles about the web), about when responsive design is appropriate. He says this near the end:
 
 > Responsive design is the new baseline. It’s the new foundation for building a site and it serves as a catchall for everything you don’t specifically design for, which will include far more devices than you will design for.
-> 
+>
 > Many sites will never need more than this baseline. Those that do will create device specific designs to enhance the responsive one, not replace it.
 
 You can read the post [here](http://www.vanseodesign.com/web-design/responsive-always-appropriate/). Which was a response from several others about dedicated mobile sites versus responsive.

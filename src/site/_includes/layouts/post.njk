@@ -6,18 +6,18 @@ bodyClass: single-post
 
 <article class="">
 	<div class="bg-gradient-to-tr from-gray-100 dark:from-gray-900 to-transparent">
-		<header class="h-screenh-90 p-4 mx-auto flex flex-col justify-center max-w-prose">
+		<header class="h-screenh-90 p-4 mx-auto flex flex-col justify-center max-w-content">
 			<h1 class="pb-3 text-4xl text-gray-900 dark:text-gray-50 md:text-5xl lg:text-6xl xl:text-7xl">{{ title }}</h1>
-			<span class="flex h-0.5 w-full bg-gradient-to-r from-blue-700 via-blue-400 dark:from-brand-primary-dark dark:via-brand-primary-light to-transparent"></span>
-			<time class="pt-2 text-gray-600 dark:text-gray-300" datetime="{% dateFormat date %}">
+			<span class="flex h-0.5 w-full bg-gradient-to-r from-brand-primary via-pink-500 to-purple-600"></span>
+			<time class="pt-2 text-gray-700 dark:text-gray-400" datetime="{% dateFormat date %}">
 				{% dateFormat date, 'dddd, MMMM D, YYYY' %}
 			</time>
 		</header>
 		<span class="block h-px w-full bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-600 to-transparent"></span>
 	</div>
-    <div class="p-4 md:py-screenh-10 mx-auto max-w-prose">
-        <div class="prose dark:prose-dark">
+    <div class="p-4 md:py-screenh-10 mx-auto max-w-content">
+        <div class="prose dark:prose-dark max-w-none">
             {{ content | safe }}
         </div>
-    </div>
+     </div>
 </article>

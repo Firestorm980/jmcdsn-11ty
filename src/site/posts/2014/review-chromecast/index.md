@@ -1,6 +1,8 @@
 ---
 title: "Review: Chromecast"
 date: "2014-01-23"
+categories:
+  - Reviews
 ---
 
 ![Chromecast](images/chromecast_front.jpg)

@@ -1,6 +1,9 @@
 ---
 title: "Meanwhile..."
 date: "2017-04-06"
+categories:
+  - JMCDSN Site News
+  - Personal
 ---
 
 So, more and more I'm finally getting my itch back to start actually using this so called "blog" of mine and post something. Well, things will be coming in the future. However, there are some changes that have happened recently to the site that I think were worth talking about. By "recent" I also mean the last few months... not the last few years.

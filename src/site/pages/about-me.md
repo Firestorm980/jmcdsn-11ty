@@ -1,6 +1,6 @@
 ---
 title: About Me
-subheading: The story behind the nerd.
+subheading: The story behind the nerd
 eleventyNavigation:
   key: About Me
   order: 3

@@ -1,6 +1,9 @@
 ---
 title: "Just an Update"
 date: "2014-04-05"
+categories:
+  - Web Design & Development
+  - Personal
 ---
 
 It's been awhile since I posted last, so I figured a quick catch up was in order of things I'm thinking about or interested in. I may write more about these topics in the future, but for now, I think a quick couple paragraphs for each will do.

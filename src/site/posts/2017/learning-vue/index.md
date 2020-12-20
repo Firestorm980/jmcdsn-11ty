@@ -1,6 +1,9 @@
 ---
 title: "Learning Vue"
 date: "2017-06-07"
+categories:
+  - Web Design & Development
+  - Personal
 ---
 
 Recently, I had to do some thinking to figure out some goals for the year and possibly beyond. As much as I feel like I have a pretty good knowledge set under my belt, companies are always looking for more. The reason why might have to do with a lot of things. Maybe the person posting the job doesn't know any better. Maybe they genuinely want someone who is a "jack of all trades" type. Could be they figure the person they get better be on at least one train of the latest and greatest something. Whatever the case, I figured it was time for me to actually learn a front end framework from top to bottom.

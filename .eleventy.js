@@ -36,6 +36,37 @@ module.exports = function(eleventyConfig) {
     ]
   });
 
+  eleventyConfig.addCollection("categoryList", function(collection) {
+    let set = new Set();
+    collection.getAll().forEach(function(item) {
+      if( "categories" in item.data ) {
+        let categories = item.data.categories;
+
+        categories = categories.filter(function(item) {
+          switch(item) {
+            // this list should match the `filter` list in categories.njk
+            case "all":
+            case "nav":
+            case "page":
+            case "pages":
+            case "post":
+            case "posts":
+              return false;
+          }
+
+          return true;
+        });
+
+        for (const category of categories) {
+          set.add(category);
+        }
+      }
+    });
+
+    // returning an array in addCollection works in Eleventy 0.5.3
+    return [...set];
+  });
+
   return {
     dir: {
       input: "src/site",
