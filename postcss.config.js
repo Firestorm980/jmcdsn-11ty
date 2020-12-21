@@ -1,9 +1,14 @@
-const plugins = [
-  require('stylelint'),
-  require('tailwindcss'),
-  require('autoprefixer'),
-  require('postcss-import'),
-  require('postcss-nested')
-]
 
-module.exports = { plugins }
+module.exports = ({ env }) => ({
+  plugins: {
+    stylelint: {},
+    tailwindcss: {},
+    autoprefixer: {},
+    'postcss-import': {},
+    'postcss-nested': {},
+    cssnano:
+      env === 'production'
+        ? { preset: 'default' }
+        : false
+  }
+})

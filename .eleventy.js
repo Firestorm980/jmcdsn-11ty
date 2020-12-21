@@ -1,5 +1,16 @@
+const fs = require("fs");
+const path = require("path");
+const isDev = process.env.APP_ENV === "development";
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginNavigation = require("@11ty/eleventy-navigation");
+
+const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
+const manifest = isDev
+  ? {
+      "main.js": "/assets/index.js",
+      "main.css": "/assets/index.css",
+    }
+  : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
 module.exports = function(eleventyConfig) {
 
@@ -15,6 +26,20 @@ module.exports = function(eleventyConfig) {
   // Shortcodes
   eleventyConfig.addShortcode( 'copyrightDate', require( './src/_11ty/shortcodes/copyrightDate' ) );
   eleventyConfig.addShortcode( 'dateFormat', require( './src/_11ty/shortcodes/dateFormat' ) );
+
+  // Add a shortcode for bundled CSS.
+  eleventyConfig.addShortcode("bundledCss", function() {
+    return manifest["main.css"]
+      ? `<link href="${manifest["main.css"]}" rel="stylesheet" />`
+      : "";
+  });
+
+  // Add a shortcode for bundled JS.
+  eleventyConfig.addShortcode("bundledJs", function() {
+    return manifest["main.js"]
+      ? `<script src="${manifest["main.js"]}"></script>`
+      : "";
+  });
 
   // Layout aliases make templates more portable.
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
