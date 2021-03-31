@@ -40,6 +40,6 @@ module.exports = function(eleventyConfig) {
       includes: "_includes", // relative to dir.input
       output: "build",
     },
-    passthroughFileCopy: true,
+    passthroughFileCopy: true
   };
 }

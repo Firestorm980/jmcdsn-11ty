@@ -5,7 +5,7 @@ categories:
   - Reviews
 ---
 
-![Chromecast](images/chromecast_front.jpg)
+{% image './src/site/posts/2014/review-chromecast/images/chromecast_front.jpg', 'Chromecast' %}
 
 I was lucky enough for my birthday this year to receive a brand new Chromecast from a friend. I had been wanting once since they were announced, and after seeing the price tag ($35) I wanted one even more. So what are my impressions from about 2 months worth of time with it? Read on for my thoughts below.
 
