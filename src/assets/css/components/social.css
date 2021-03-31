@@ -1,0 +1,25 @@
+.social {
+	& a {
+		align-items: center;
+		border: none;
+		color: var(--color-white);
+		display: inline-flex;
+		justify-content: center;
+		min-height: 2.75rem;
+		min-width: 2.75rem;
+		padding: 0.25em 0.5em;
+
+		&:hover,
+		&:focus {
+			color: var(--color-black);
+		}
+	}
+}
+
+.social__items {
+	display: flex;
+	gap: 2rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
