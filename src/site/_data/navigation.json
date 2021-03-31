@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "key": "Home",
+      "url": "/"
+    },
+    {
+      "key": "About Me",
+      "url": "/about-me/"
+    },
+    {
+      "key": "My Thoughts",
+      "url": "/my-thoughts/"
+    },
+    {
+      "key": "Contact",
+      "url": "/contact/"
+    }
+  ]
+}
