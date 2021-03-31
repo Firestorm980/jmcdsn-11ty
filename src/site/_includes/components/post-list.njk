@@ -1,0 +1,24 @@
+<ul>
+    {%- for post in postListItems -%}
+        <li>
+            <article>
+                <div>
+                    <h3>
+                        <a href="{{ post.url }}" rel="bookmark">{{ post.data.title }}</a>
+                    </h3>
+                    <time  datetime="{% dateFormat post.data.date %}">
+                        {% dateFormat post.data.date, 'dddd, MMMM D, YYYY' %}
+                    </time>
+                </div>
+                <div>
+                    <p>{{post.data.description}}</p>
+                </div>
+                <div>
+                    <a href="{{ post.url }}">
+                        Read more<span class="sr-only"> about "{{ post.data.title }}"</span>
+                    </a>
+                </div>
+            </article>
+        </li>
+    {%- endfor -%}
+</ul>

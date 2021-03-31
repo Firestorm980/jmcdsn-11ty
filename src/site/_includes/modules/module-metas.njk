@@ -1,0 +1,26 @@
+<!--
+/**
+ * JMCDSN - Module : Metas
+ *
+ * @package jmcdsn
+ */
+-->
+<section class="section section--module section--module-metas">
+	{% include 'components/module-base.njk' %}
+	<div class="section__module">
+		<div class="metas">
+			{% for group in module.metas %}
+				<div class="meta meta--show">
+					<h3 class="meta__heading">
+						{{ group.heading | safe }}
+					</h3>
+					<ul class="meta__list">
+						{% for item in group.items %}
+							<li>{{ item | safe }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

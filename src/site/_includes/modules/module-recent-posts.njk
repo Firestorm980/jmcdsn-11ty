@@ -1,0 +1,21 @@
+<!--
+/**
+ * JMCDSN - Module : Recent Posts
+ *
+ * @package jmcdsn
+ */
+-->
+<section class="section section--module section--module-recent-posts">
+	{% include 'components/module-base.njk' %}
+	<div class="section__module">
+		<div class="section__loop">
+			{% set postListItems = collections.posts | head(-3) %}
+			{% include 'components/post-list.njk' %}
+		</div>
+		<div class="section__footer">
+			<a href="/my-thoughts/" class="button button--primary">
+				Read More Articles
+			</a>
+		</div>
+	</div>
+</section>

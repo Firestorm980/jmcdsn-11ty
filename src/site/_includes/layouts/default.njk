@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicons/manifest.json">
+    <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#f39c12">
+    <meta name="theme-color" content="#f39c12">
+
+		<link rel="stylesheet" href="https://unpkg.com/prismjs@1.23.0/themes/prism-tomorrow.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    {% include "seo.njk" %}
+  </head>
+  <body class="{% if bodyClass %}{{ bodyClass }}{% endif %}">
+    {% include "components/svg.njk" %}
+    {% include "header.njk" %}
+    <main id="main" class="site__main">
+      {{ content | safe }}
+    </main>
+    {% include "footer.njk" %}
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+---
+layout: layouts/default.njk
+templateClass: tmpl-post
+bodyClass: single-post
+---
+
+<article>
+	<header class="header header--post">
+		<div class="header__inner">
+			<h1>{{ title }}</h1>
+			<time datetime="{% dateFormat date %}">
+				{% dateFormat date, 'dddd, MMMM D, YYYY' %}
+			</time>
+		</div>
+	</header>
+	<div class="content">
+		{{ content | safe }}
+	</div>
+</article>

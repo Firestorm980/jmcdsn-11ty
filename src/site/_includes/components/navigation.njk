@@ -1,0 +1,9 @@
+<nav id="siteNavigation" class="navigation" aria-label="Primary Menu">
+	<ul id="menu-primary" class="navigation__items">
+	{%- for entry in navigation.entries %}
+		<li class="navigation__item{% if entry.url == page.url %} navigation__item--current{% endif %}">
+			<a href="{{ entry.url | url }}">{{ entry.key }}</a>
+		</li>
+	{%- endfor %}
+	</ul>
+</nav><!-- .main-navigation -->

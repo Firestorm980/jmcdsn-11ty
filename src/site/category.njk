@@ -1,0 +1,15 @@
+---
+pagination:
+  data: collections.categoryList
+  size: 1
+  alias: category
+layout: layouts/page.njk
+eleventyComputed:
+  title: Category {{ category }}
+permalink: /my-thoughts/category/{{ category | slug }}/
+---
+
+{% set postListItems = collections.categoryList[ category ] %}
+{% include "components/post-list.njk" %}
+
+<p>See <a href="{{ '/my-thoughts/category/' | url }}">all categories</a>.</p>

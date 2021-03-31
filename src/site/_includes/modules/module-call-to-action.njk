@@ -1,0 +1,17 @@
+<!--
+/**
+ * JMCDSN - Module : CTA
+ *
+ * @package jmcdsn
+ */
+-->
+<section class="section section--module section--module-cta">
+	{% include 'components/module-base.njk' %}
+	<div class="section__footer">
+		{% for cta in module.ctas %}
+			<a class="button button--primary" href="{{ cta.href }}">
+				{{ cta.text }}
+			</a>
+		{% endfor %}
+	</div>
+</section>

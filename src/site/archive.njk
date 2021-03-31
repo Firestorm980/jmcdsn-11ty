@@ -1,0 +1,22 @@
+---js
+{
+	layout: "layouts/page.njk",
+	permalink: "/my-thoughts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html",
+	title: "Blog",
+	subheading: "My thoughts about stuff and things",
+	bodyClass: "archive",
+	pagination: {
+		data: "collections.posts",
+		size: 10,
+		alias: "posts",
+		addAllPagesToCollections: true,
+		before: function(data) {
+			return data.sort((a,b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+		}
+	}
+}
+---
+
+{% set postListItems = pagination.items %}
+{% include "components/post-list.njk" %}
+{% include "components/pagination.njk" %}

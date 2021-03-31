@@ -1,0 +1,20 @@
+---
+layout: layouts/default.njk
+templateClass: tmpl-page
+bodyClass: page
+---
+
+<header class="header header--page">
+	<div class="header__inner">
+		<h1>
+			<span>{{ title }}</span>
+			{% if subheading %}
+			<span>{{ subheading }}</span>
+			{% endif %}
+		</h1>
+	</div>
+</header>
+
+<div class="content">
+	{{ content | safe }}
+</div>

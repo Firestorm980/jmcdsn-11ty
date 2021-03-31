@@ -1,0 +1,49 @@
+---
+layout: layouts/default.njk
+permalink: /
+description: Graphic designer. Web developer. All around nerd. Welcome to the digital home of Jon Michael Christensen.
+bodyClass: home page
+---
+
+{%
+set module = {
+    heading: 'All around nerd.',
+    subheading: 'Graphic designer, Web developer,',
+    show_content: false
+}
+%}
+{% include 'modules/module-hero.njk' %}
+
+{%
+set module = {
+    heading: 'The latest posts',
+    content: 'Read my thoughts about the web, design, technology, and entertainment. Really, about how all these things intersect together in our lives. I also may post something just generally nerdy every now and then.',
+    show_content: true
+}
+%}
+{% include 'modules/module-recent-posts.njk' %}
+
+{%
+set module = {
+    heading: 'More about me',
+    content: 'I specialize in web design and front end development, but my passions include branding and digital art. I love design and I love technology. Most of all, I love bringing the two together to make great digital work.',
+    show_content: true,
+    ctas: [
+        { href: '/about-me/', text: 'Learn more about me' }
+    ]
+}
+%}
+{% include 'modules/module-call-to-action.njk' %}
+
+{%
+set module = {
+    heading: 'Get in touch',
+    content: 'Interested in getting a hold of me? Want to talk about opportunities or just interested in a quick chat? Go introduce yourself on various social networks listed here.',
+    show_content: true,
+    ctas: [
+        { href: 'https://www.linkedin.com/in/jon-christensen-2768381a/', text: 'LinkedIn' },
+        { href: 'https://twitter.com/jonmchristensen', text: 'Twitter' }
+    ]
+}
+%}
+{% include 'modules/module-call-to-action.njk' %}
