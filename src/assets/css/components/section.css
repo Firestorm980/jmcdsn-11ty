@@ -36,6 +36,7 @@
 	& .section__heading {
 		display: flex;
 		flex-wrap: wrap;
+		font-size: var(--step-6);
 		justify-content: center;
 		text-align: center;
 
