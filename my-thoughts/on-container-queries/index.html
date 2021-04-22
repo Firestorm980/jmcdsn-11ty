@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicons/manifest.json">
+    <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#f39c12">
+    <meta name="theme-color" content="#f39c12">
+
+		<link rel="stylesheet" href="https://unpkg.com/prismjs@1.23.0/themes/prism-tomorrow.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    
+
+
+<title>On Container Queries | JMCDSN</title>
+
+<meta name="description" content="Graphic designer, web developer, all around nerd.">
+<meta name="robots" content="index,follow">
+<meta name="generator" content="Eleventy">
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="On Container Queries | JMCDSN" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="https://jmcdsn.com/" />
+<meta property="og:site_name" content="JMCDSN" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@jonmchristensen" />
+<meta name="twitter:site" content="@jonmchristensen" />
+
+<link rel="canonical" href="https://jmcdsn.com/" />
+  </head>
+  <body class="single-post">
+    <svg aria-hidden="true" style="display: none;">
+	<defs>
+		<symbol id="icon-twitter" viewBox="0 0 32 32">
+			<path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path>
+		</symbol>
+		<symbol id="icon-github" viewBox="0 0 32 32">
+			<path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+		</symbol>
+		<symbol id="icon-linkedin" viewBox="0 0 32 32">
+			<path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
+			<path d="M2 12h6v18h-6v-18z"></path>
+			<path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+		</symbol>
+	</defs>
+</svg>
+
+    <header id="masthead" class="site-header">
+	<a href="#main" class="skip-link button button--primary">Skip to content</a>
+	<div class="site-header__inner">
+		<a href="/" class="site-header__logo">
+			<span class="sr-only">JMCDSN</span>
+			<svg class="logo" xmlns="http://www.w3.org/2000/svg" width="150" height="61" viewBox="0 0 150 61" aria-hidden="true">
+				<path class="logo__background" d="M0 0h150v61H0z"/>
+				<g>
+					<path class="logo__letter" data-letter="J" d="M31.458 41.785c.868.123 1.53-.084 2.024-.744.248-.288.372-.784.372-1.487V15.505h4.462v24.75c0 1.653-.413 3.183-1.446 4.298-1.033 1.115-2.77 1.777-5.413 1.61v-4.378z"/>
+					<path class="logo__letter" data-letter="M" d="M48.812 45.875l-2.85-19.09-.167-1.28h-.248v20.37h-4.132v-30.37h5.455l2.645 13.884.206 1.61h.084l.207-1.61 2.646-13.885h5.455v30.37h-4.13v-20.37h-.25l-.164 1.28-2.85 19.09H48.81z"/>
+					<path class="logo__letter" data-letter="C" d="M73.024 35.463v4.174c-.042 1.238-.29 2.355-.744 3.305-.372.826-.95 1.61-1.776 2.232-.826.66-1.942 1.03-3.43 1.03-1.488 0-2.645-.37-3.47-1.03-.827-.62-1.365-1.406-1.736-2.232-.455-.95-.703-2.066-.744-3.305V21.744c.04-1.198.29-2.314.744-3.264.372-.827.91-1.653 1.735-2.273.827-.62 1.983-1.033 3.47-1.033 1.488 0 2.605.414 3.43 1.033.827.62 1.405 1.446 1.777 2.273.455.95.702 2.065.744 3.264v4.174H68.85v-4.174c0-.826-.207-1.404-.66-1.9-.208-.207-.58-.33-1.034-.33-.785 0-1.157.578-1.364 1.115-.124.33-.165.7-.207 1.114v17.893c.042.867.29 1.445.703 1.9.207.207.496.33.868.33.95 0 1.322-.496 1.53-1.115.123-.29.164-.662.164-1.115v-4.174h4.174z"/>
+					<path class="logo__letter" data-letter="D" d="M75.71 45.875v-30.37h3.51c4.133 0 6.364.826 7.563 3.14 1.157 2.314 1.322 6.116 1.322 12.066 0 5.95-.165 9.712-1.322 12.024-1.198 2.314-3.43 3.14-7.562 3.14h-3.51zm4.46-4.463c1.53 0 2.397-.164 2.853-1.652.206-.703.372-1.777.413-3.223.04-1.447.04-3.39.04-5.867 0-2.48 0-4.422-.04-5.868-.04-1.405-.207-2.48-.413-3.224-.455-1.445-1.322-1.61-2.852-1.61V41.41z"/>
+					<path class="logo__letter" data-letter="S" d="M98.475 23.645c0-.99-.04-2.107-.33-2.975-.29-.826-.744-1.404-1.446-1.404-1.158.04-1.53 1.238-1.53 3.016 0 1.033.455 2.107 1.116 3.264.66 1.158 1.528 2.355 2.396 3.637 1.033 1.53 2.066 3.1 2.852 4.63.785 1.526 1.322 3.097 1.322 4.75 0 2.024-.33 3.925-1.28 5.33-.95 1.405-2.48 2.314-4.918 2.314-2.852 0-4.463-1.074-5.372-2.727s-1.115-3.842-1.115-6.115l4.38-.414c0 1.282.042 2.564.373 3.515.29.992.785 1.652 1.735 1.652 1.322 0 1.817-1.404 1.817-3.348 0-.99-.495-2.15-1.156-3.347-.373-.578-.745-1.2-1.158-1.818-.868-1.24-1.818-2.645-2.81-4.174-.992-1.528-1.735-3.1-2.19-4.71-.248-.785-.372-1.61-.372-2.438 0-1.652.372-3.43 1.322-4.793.95-1.323 2.396-2.274 4.504-2.315 2.687-.04 4.257 1.074 5.124 2.686.868 1.654 1.116 3.68 1.116 5.374l-4.38.41z"/>
+					<path class="logo__letter" data-letter="N" d="M109.96 30.05l-.37-1.405h-.25v17.23h-4.09v-30.37h3.967l4.34 15.825.37 1.406h.25v-17.23h4.09v30.37H114.3l-4.34-15.827z"/>
+				</g>
+			</svg>
+		</a>
+		<div class="site-header__navigation">
+			<nav id="siteNavigation" class="navigation" aria-label="Primary Menu">
+	<ul id="menu-primary" class="navigation__items">
+		<li class="navigation__item">
+			<a href="/">Home</a>
+		</li>
+		<li class="navigation__item">
+			<a href="/about-me/">About Me</a>
+		</li>
+		<li class="navigation__item">
+			<a href="/my-thoughts/">My Thoughts</a>
+		</li>
+		<li class="navigation__item">
+			<a href="/contact/">Contact</a>
+		</li>
+	</ul>
+</nav><!-- .main-navigation -->
+
+		</div>
+	</div>
+</header>
+
+    <main id="main" class="site__main">
+      
+<article>
+	<header class="header header--post">
+		<div class="header__inner">
+			<h1>On Container Queries</h1>
+			<time datetime="2017-05-05T00:00:00+00:00">
+				Friday, May 5, 2017
+			</time>
+		</div>
+	</header>
+	<div class="content">
+		<p>So, lately I had read quite a bit about container queries (or sometimes I see them called &quot;element queries&quot;). Within the span of a couple weeks, there were posts on <a href="https://css-tricks.com/container-query-discussion/">CSS-Tricks</a>, on <a href="https://ethanmarcotte.com/wrote/on-container-queries/">Ethan Marcotte</a>'s site (which I found by way of Brad Frost's site), and a few Twitter posts (which I can't find at the moment of writing this, apologies). I had some thoughts I want to share on it. Mostly because at the time, by chance, I was actually wondering what has been going on in this space.</p>
+<h2>Way back when...</h2>
+<p>A long time ago, I <a href="https://www.smashingmagazine.com/2013/06/media-queries-are-not-the-answer-element-query-polyfill/">read this article</a> on element queries on Smashing Magazine. This was back in 2013. For me and the company I worked at during that time, responsive design still felt new enough internally they were still trying to figure out how to sell it. It was still flashy enough and new enough that we could still wow clients demoing it. After reading that article, a few things popped into my head. The main one: this guy is nuts. Media queries are awesome! They do everything we want. Clearly he isn't using them right. He isn't organizing his CSS right. Various other thoughts along those lines. I really didn't see the need beyond media queries at the time. A lot of the ideas in this article though were a precursor to what we see now in the work on container queries.</p>
+<h2>Present day...</h2>
+<p>So... yea, things have progressed since then. Clients <em>expect</em> responsive design now. It doesn't wow them anymore, its the norm. Media queries are part of the normal workflow now. It is something that designers are finally thinking of and planning for at the beginning. Just about each component I make has some sort of media query styling to it in one way or another. I'm sure most developers are in a similar spot.</p>
+<p>Modular architecture is the name of the game. Recently, we've gotten some help making some of these modular components. The addition, and wide support of, Flexbox has helped a lot in making layouts. I expect when I finally get to use Grid on a regular basis I'm going to fall in love with that, as it will also help out with some of the common layout issues I've had with responsive layout in the past.</p>
+<p>But we're talking about the need for container queries. So as time has gone by and I've started to work on sites that are more and more modular in their thinking, I would absolutely <em>love</em> to have container queries. Because the reality is, we need them for more than just our layout problems. I feel like the designers I've worked with since have become more aware of different sizes, different interfaces, and are embracing this modular way of thinking. But, as someone who is also a designer, there is more to this than just layout.</p>
+<p>Chris points this out in his CSS-Tricks article. I think one of the most important things that this can help solve is hierarchy. Whether that is a module's weight, its type, its color or visibility, when you're moving a modular component from one area of your site to another on the page, you can really end up messing with the hierarchy between it and other modules. Are there other ways to solve this besides container queries? Sure. But they probably aren't as clean. To me, container queries represent another tool in our CSS arsenal. I honestly think that if they were implemented, I'd still use media queries along side them. Almost like we have different nails and two hammers to choose from instead of one.</p>
+<h2>The elephant in the room</h2>
+<p>There is still a thing that bugs me about container queries that has bugged me since that old Smashing Mag article. All current uses for container queries depend on JavaScript to work. Now, I'll admit, I use polyfills all the time. People <em>really</em> want container queries though. Like, yesterday. So, they're reaching for JS to fill the gap until they drop properly in the browser. While normally I'd say &quot;that's progressive enhancement&quot;, it just doesn't feel right to me in this instance.</p>
+<p>Why? If they don't work for the user, sure they still get the content, but there could be some more serious design problems that could arise out of them not getting their queries. Aren't those problems why we're using them in the first place?</p>
+<p>Depending on JS to solve your potential layout, hierarchy, and other design issues with your module sounds... risky. Maybe that's just the designer in me. While we do have modules that would benefit from having this ability, <em>not</em> having container queries isn't exactly stopping us from providing solutions anyways with current tech without JS.</p>
+<p>This is just personal opinion, but I also don't like non-standard CSS in my styles. I've been down that road before with other fixes for Internet Explorer way back, and I don't care to do it again. I know some people would disagree with that. People use non-standard CSS all the time. In my experience, this is mostly limited to vendor prefixes. But the spec for this isn't even really close yet. Our scripts might use code that is completely different than what it will end up being. Lately I've really been focusing on staying more vanilla everywhere, and only using a polyfill if it follows the spec. In this case, I can't do either.</p>
+<h2>Patiently Waiting</h2>
+<p>I'm going to love when container queries finally drop. I think it'll be an amazing tool to have next to media queries. With all the other new CSS features on the way, media queries are going to be even more powerful, and we'll have lots of other fun stuff to play with. In the meantime, we just got Grid (mostly) and between it and Flexbox we can solve a good chunk of layout problems. As for our hierarchy problems, maybe we'll just have to deal with what we have right now. It isn't ideal, but that's why we're working on the problem. Some will choose to go ahead and JS their way out of it, and that is ok if you're comfortable with that. Personally, I'll be going about it as usual, using the current (but kinda gross in this instance) tech.</p>
+
+	</div>
+</article>
+
+    </main>
+    <footer id="colophon" class="site-footer">
+	<div class="site-footer__inner">
+		<p>&copy; 2021 Jon Michael Christensen Design</p>
+		<div class="site-footer__social">
+			<div class="social">
+    <ul class="social__items">
+        
+            <li class="social__item">
+                <a href="https://www.linkedin.com/in/jon-christensen-2768381a/">
+                    <span class="sr-only">Visit me on LinkedIn</span>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        
+            <li class="social__item">
+                <a href="https://github.com/Firestorm980/">
+                    <span class="sr-only">Visit me on Github</span>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+            </li>
+        
+            <li class="social__item">
+                <a href="https://twitter.com/jonmchristensen">
+                    <span class="sr-only">Visit me on Twitter</span>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+		</div>
+	</div>
+</footer>
+
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>
