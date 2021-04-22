@@ -1,0 +1,29 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+}
+
+.pagination__items {
+	display: inline-flex;
+	list-style: none;
+	padding-left: 0;
+}
+
+.pagination__item {
+
+	& ~ .pagination__item {
+		margin-left: 1em;
+	}
+
+	& a {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		min-height: 2rem;
+		min-width: 2rem;
+
+		&[aria-current] {
+			color: var(--color-white);
+		}
+	}
+}
