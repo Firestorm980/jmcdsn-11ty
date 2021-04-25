@@ -13,7 +13,7 @@ I was lucky enough for my birthday this year to receive a brand new Chromecast f
 
 The Chromecast comes in a small package with everything you need. There's the device itself, as well as the usual manual a USB cable, and a power adapter. The packaging is pretty slick. Very clean and Apple like, though it's about what I'd expect from a company like Google. One of the things that stuck me first was just how small the Chromecast was. It's not much bigger than a typical USB flash drive. Of course, you could almost confuse it for one since there is only 1 obvious port that looks very USB-like, the HDMI port. On the opposite end of the device is the USB port.
 
-![Chromecast Packaging](images/chromecast_packaging.jpg)
+{% image './src/site/posts/2014/review-chromecast/images/chromecast_packaging.jpg', 'Chromecast packaging' %}
 
 ## Installation
 
@@ -26,7 +26,7 @@ Initially, I figured two things:
 
 At first, I set it up like that. After quite a few minutes between a friend and I of tinkering, we still had not gotten a signal from the input. We tried switching the input, not using USB power, a reset of the receiver, nothing seemed to do it. I'm not sure what finally changed the Chromecast's mind, but when we plugged it directly into an HDMI port and USB port on my LG television, it sprang to life... after some more unplugging and re-plugging in.
 
-![Chromcast USB port](images/chromecast_port.jpg)
+{% image './src/site/posts/2014/review-chromecast/images/chromecast_port.jpg', 'Chromecast USB port' %}
 
 ## Set Up
 
