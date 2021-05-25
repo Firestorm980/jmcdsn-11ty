@@ -30,5 +30,6 @@
 .header__inner {
 	margin: 0 auto;
 	max-width: var(--width-xxlarge);
+	text-align: center;
 	width: 100%;
 }

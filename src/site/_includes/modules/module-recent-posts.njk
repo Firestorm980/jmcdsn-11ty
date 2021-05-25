@@ -9,7 +9,7 @@
 	{% include 'components/module-base.njk' %}
 	<div class="section__module">
 		<div class="section__loop">
-			{% set postListItems = collections.posts | head(-3) %}
+			{% set postListItems = collections.posts | head(-3) | reverse %}
 			{% include 'components/post-list.njk' %}
 		</div>
 		<div class="section__footer">
