@@ -1,10 +1,6 @@
 {
   "entries": [
     {
-      "key": "Home",
-      "url": "/"
-    },
-    {
       "key": "About Me",
       "url": "/about-me/"
     },
