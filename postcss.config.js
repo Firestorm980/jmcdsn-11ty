@@ -4,12 +4,7 @@ module.exports = ({ env }) => ({
     stylelint: {},
     autoprefixer: {},
     'postcss-import': {},
-    'postcss-preset-env': {
-      stage: 0,
-      features: {
-        'nesting-rules': true
-      }
-    },
+    'postcss-nesting': {},
     cssnano:
         env === 'production'
           ? { preset: 'default' }
