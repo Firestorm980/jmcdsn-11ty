@@ -1,13 +1,31 @@
+const stylelint = require('stylelint')
+const autoprefixer = require('autoprefixer')
+const postcssImport = require('postcss-import')
+const postcssNesting = require('postcss-nesting')
+const purgecss = require('@fullhuman/postcss-purgecss')
+const cssnano = require('cssnano')
 
-module.exports = ({ env }) => ({
-  plugins: {
-    stylelint: {},
-    autoprefixer: {},
-    'postcss-import': {},
-    'postcss-nesting': {},
-    cssnano:
-        env === 'production'
-          ? { preset: 'default' }
-          : false
+const config = ({ env }) => {
+  const plugins = [
+    stylelint,
+    autoprefixer,
+    postcssImport,
+    postcssNesting,
+    purgecss({
+      content: [
+        './build/**/*.html',
+        './build/**/*.js'
+      ]
+    })
+  ]
+
+  if (env === 'production') {
+    plugins.push(cssnano({ preset: 'default' }))
   }
-})
+
+  return {
+    plugins
+  }
+}
+
+module.exports = config
