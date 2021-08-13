@@ -3,12 +3,10 @@ html {
 }
 
 body {
-	background-color: var(--color-gray-900);
-	color: var(--color-gray-200);
+	background-color: var(--color-bg-body);
+	color: var(--color-text-body);
 	font-family: "Jost", sans-serif;
 	font-size: var(--step-0);
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
 	font-weight: 400;
 	line-height: 1.5;
 }
@@ -19,8 +17,9 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--color-gray-50);
+	color: var(--color-text-headings);
 	font-family: inherit;
+	font-weight: 700;
 	line-height: 1.2;
 	margin-bottom: 0.5em;
 	margin-top: 0.5em;
@@ -37,37 +36,31 @@ h4 { font-size: var(--step-2); }
 h5 { font-size: var(--step-1); }
 
 a {
-	background-color: transparent;
-	background-image: linear-gradient(to bottom, transparent 50%, var(--color-amber-500) 50%);
-	background-position: top center;
-	background-size: 100% 200%;
-	border-bottom: 0.125rem solid transparent;
-	color: var(--color-amber-500);
-	text-decoration: none;
+	color: var(--color-primary);
+	text-decoration: underline;
 	transition-duration: var(--transition-duration);
 	transition-property: background, border-color, color, text-decoration-color;
 	transition-timing-function: var(--transition-easing);
 
 	&:hover,
 	&:focus {
-		background-position: bottom center;
-		color: var(--color-gray-900);
+		text-decoration: none;
 	}
 }
 
 hr {
-	background-image: linear-gradient(to left, transparent, var(--color-amber-500), transparent);
+	background-image: linear-gradient(to left, transparent, var(--color-primary), transparent);
 	border: none;
 	height: 1px;
 }
 
 q::after,
 q::before {
-	color: var(--color-amber-500);
+	color: var(--color-primary);
 }
 
 li::marker {
-	color: var(--color-amber-500);
+	color: var(--color-primary);
 }
 
 pre {
@@ -75,15 +68,16 @@ pre {
 }
 
 kbd {
-	background-color: var(--color-gray-800);
-	border-bottom: 0.125em solid var(--color-gray-700);
+	background-color: var(--color-gray-700);
 	border-radius: 0.25rem;
+	color: var(--color-gray-100);
 	padding: 0.25em 0.5em;
 }
 
 code {
-	background-color: var(--color-gray-800);
+	background-color: var(--color-gray-700);
 	border-radius: 0.25rem;
+	color: var(--color-gray-100);
 	display: inline-block;
 	padding: 0.5em 1em;
 }
@@ -97,7 +91,7 @@ blockquote {
 	position: relative;
 
 	&::before {
-		background-image: linear-gradient(to bottom, var(--color-amber-500), transparent);
+		background-image: linear-gradient(to bottom, var(--color-primary), transparent);
 		border-radius: 0.125rem;
 		content: '';
 		height: 100%;
@@ -112,26 +106,40 @@ cite {
 	font-size: var(--step-0);
 }
 
+caption,
+figcaption {
+	font-size: var(--step--1);
+}
+
 table {
 	border-collapse: collapse;
 
 	& thead {
-		border-bottom: 1px solid var(--color-gray-800);
-		color: var(--color-gray-50);
+		border-bottom: 1px solid var(--color-primary);
+	}
+
+	& thead,
+	& tfoot {
+		color: var(--color-text-headings);
 	}
 
 	& tr:nth-child(even) {
-		background-color: var(--color-gray-800);
+		background-color: var(--color-gray-200);
+
+		@media (prefers-color-scheme: dark) {
+			background-color: var(--color-gray-700);
+		}
 	}
 
 	& th,
 	& td {
 		padding: 1rem;
+		text-align: inherit;
 	}
 }
 
 dt {
-	color: var(--color-gray-50);
+	color: var(--color-text-headings);
 	font-weight: 700;
 }
 
@@ -142,7 +150,7 @@ dd {
 }
 
 dd::before {
-	color: var(--color-amber-500);
+	color: var(--color-primary);
 	content: "⮩";
 	left: 1rem;
 	position: absolute;
