@@ -11,6 +11,13 @@ body {
 	line-height: 1.5;
 }
 
+*:focus {
+	outline-color: var(--color-primary);
+	outline-offset: 0.125rem;
+	outline-style: dotted;
+	outline-width: 0.125rem;
+}
+
 h1,
 h2,
 h3,
@@ -42,8 +49,7 @@ a {
 	transition-property: background, border-color, color, text-decoration-color;
 	transition-timing-function: var(--transition-easing);
 
-	&:hover,
-	&:focus {
+	&:hover {
 		text-decoration: none;
 	}
 }

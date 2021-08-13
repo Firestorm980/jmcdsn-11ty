@@ -1,57 +1,45 @@
 /* stylelint-disable at-rule-no-unknown */
-.button {
+button,
+.button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
 	appearance: none;
-	box-sizing: border-box;
+	background-color: var(--color-bg-body);
+	border-color: var(--color-gray-200);
+	border-bottom-color: var(--color-primary);
+	border-style: solid;
+	border-width: 0.125rem;
+	box-sizing: inherit;
+	color: var(--color-text-headings);
 	cursor: pointer;
 	display: inline-block;
-	font-family: "Jost", sans-serif;
+	font-family: inherit;
 	font-size: 1rem;
 	font-weight: 700;
 	letter-spacing: 0.04em;
-	line-height: 1;
-	margin-bottom: 2em;
-	margin-top: 2em;
-	padding: 0;
+	padding: 0.5em 1em;
 	text-decoration: none;
-	text-transform: uppercase;
 	transition-duration: var(--transition-duration);
 	transition-property: background-color, border-color, color;
 	transition-timing-function: var(--transition-easing);
-	white-space: nowrap;
+
+	@media (prefers-color-scheme: dark) {
+		border-color: var(--color-gray-700);
+		border-bottom-color: var(--color-primary);
+	}
 
 	& * {
 		pointer-events: none;
 	}
 
-	&:hover,
-	&:focus {
+	&:hover {
+		border-color: var(--color-primary);
 		text-decoration: none;
 	}
 
 	&[disabled],
 	&:disabled {
 		cursor: not-allowed;
-	}
-}
-
-.button--primary {
-	background-color: transparent;
-	background-image: linear-gradient(to bottom, transparent 50%, var(--color-amber-500) 50%, var(--color-amber-400));
-	background-position: top center;
-	background-size: 100% 200%;
-	border-color: transparent;
-	border-style: solid;
-	border-width: 0 0 0.125rem;
-	color: var(--color-white);
-	padding: 0.8em 1.4em;
-	position: relative;
-	transition-duration: var(--transition-duration);
-	transition-property: background, border, box-shadow, color;
-	transition-timing-function: var(--transition-easing);
-
-	&:hover,
-	&:focus {
-		background-position: bottom center;
-		color: var(--color-gray-900);
 	}
 }
