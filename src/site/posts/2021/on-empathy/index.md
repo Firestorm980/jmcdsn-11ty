@@ -1,3 +1,11 @@
+---
+title: "On Empathy"
+date: "2021-10-07"
+categories:
+  - Personal
+  - Web Design & Development
+---
+
 I'll admit, I'm a little frustrated. Originally, I was going to title this post "Giving a Shit", but I'm sure a few people would take some offense with that. Regardless, that is the sentiment I am feeling at the moment.
 
 Why am I feeling this way? For years, I was unaware of the importance of accessibility in my work. Then I worked on a school website (then another right after) and took a deep dive and that changed.
